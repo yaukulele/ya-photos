@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="zh-Hant"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>FP-40 上架圖</title>
+<style>
+:root{--bg:#f5f5f7;--card:#fff;--ink:#1d1d1f;--sub:#6e6e73;--line:#e3e3e6;--blue:#0071e3}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC","Microsoft JhengHei",sans-serif;-webkit-font-smoothing:antialiased}
+nav{position:sticky;top:0;z-index:5;background:rgba(245,245,247,.86);backdrop-filter:saturate(180%) blur(18px);-webkit-backdrop-filter:saturate(180%) blur(18px);border-bottom:1px solid var(--line)}
+nav .in{max-width:1200px;margin:0 auto;padding:0 16px;display:flex;gap:4px;overflow-x:auto;scrollbar-width:none}
+nav a{flex:none;padding:14px 12px;color:var(--ink);text-decoration:none;font-size:14px;opacity:.8}
+nav a:hover{opacity:1}
+header{max-width:1200px;margin:0 auto;padding:48px 16px 8px}
+header h1{font-size:40px;letter-spacing:-.02em;margin:0 0 8px}
+header p{color:var(--sub);margin:0 0 6px;font-size:16px;line-height:1.6}
+.note{max-width:1200px;margin:16px auto 0;padding:0 16px}
+.note div{background:var(--card);border-radius:18px;padding:18px 22px;font-size:14px;line-height:1.75;color:#333}
+.note b{color:var(--ink)}
+section.model{max-width:1200px;margin:0 auto;padding:56px 16px 8px;scroll-margin-top:50px}
+.mh{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:12px;margin-bottom:18px}
+.mh h2{font-size:34px;margin:0;letter-spacing:-.01em}.mh p{margin:4px 0 0;color:var(--sub)}
+.btns{display:flex;gap:8px;flex-wrap:wrap}
+button{appearance:none;border:0;border-radius:980px;padding:9px 18px;font-size:14px;cursor:pointer;background:var(--blue);color:#fff;display:inline-flex;align-items:center;justify-content:center;text-align:center;font-family:inherit}
+button.ghost{background:#e8e8ed;color:var(--ink)}
+button:disabled{opacity:.6;cursor:wait}
+h3{font-size:19px;margin:30px 0 12px;display:flex;align-items:baseline;gap:10px}
+h3 small{font-weight:400;color:var(--sub);font-size:13px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:14px}
+.grid.scene{grid-template-columns:repeat(auto-fill,minmax(300px,1fr))}
+.grid.orig{grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px}
+.card{background:var(--card);border-radius:16px;overflow:hidden;display:flex;flex-direction:column;min-width:0}
+.card img{width:100%;aspect-ratio:1;object-fit:contain;background:#f5f5f7;display:block;cursor:zoom-in}
+.scene .card img{aspect-ratio:3/2;object-fit:cover}
+.card .cap{padding:10px 12px;display:flex;justify-content:space-between;align-items:center;gap:8px;font-size:13px}
+.card .cap span{color:var(--sub);overflow:hidden;text-overflow:ellipsis;white-space:nowrap;min-width:0}
+.card .cap a{color:var(--blue);text-decoration:none;flex:none;font-size:13px}
+.sub{margin:18px 0 8px;color:var(--sub);font-size:14px}
+.orig .card .cap{padding:7px 9px;font-size:12px}
+details{margin-top:6px}
+summary{cursor:pointer;color:var(--blue);font-size:15px;padding:8px 0;list-style:none}
+summary::-webkit-details-marker{display:none}
+footer{max-width:1200px;margin:0 auto;padding:48px 16px 64px;color:var(--sub);font-size:13px}
+#lb{position:fixed;inset:0;background:rgba(0,0,0,.86);display:none;align-items:center;justify-content:center;z-index:9;padding:16px}
+#lb.on{display:flex}#lb img{max-width:100%;max-height:100%;border-radius:8px;background:#fff}
+@media(max-width:600px){header h1{font-size:30px}.mh h2{font-size:28px}.grid{grid-template-columns:repeat(2,1fr);gap:10px}.grid.scene{grid-template-columns:1fr}.grid.orig{grid-template-columns:repeat(3,1fr);gap:8px}.card .cap{flex-direction:column;align-items:flex-start;gap:2px}.card .cap span{max-width:100%}}
+
+.dl{display:inline-flex;align-items:center;justify-content:center;border-radius:980px;padding:9px 18px;font-size:14px;background:#1d1d1f;color:#fff;text-decoration:none}
+.crumb{max-width:1200px;margin:0 auto;padding:18px 16px 0;font-size:14px}.crumb a{color:var(--blue);text-decoration:none}</style></head><body>
+<nav><div class="in"><a href="../">← 電鋼琴</a><a href="#apple">蘋果風</a><a href="#scene">擺放示意</a><a href="#home">居家練習</a><a href="#tech">科技拆解</a><a href="#desc">說明圖</a><a href="#orig">原圖</a></div></nav>
+<header><h1>Roland FP-40 上架圖</h1>
+<p>PChome 賣場現在用的 31 張原圖，加上改成四種風格的新圖。新圖都是 1000×1000（擺放示意是 1600×1067），可以直接上傳平台。</p>
+<p>每張都能單獨下載，也可以一次打包。</p></header>
+<div class="note"><div>
+<b>新圖怎麼做的：</b>琴本身是原本賣場的 Roland 官方白底照片去背，沒有用 AI 重畫；蘋果風底色是 #F5F5F7 淺灰，加很淡的落地陰影。<br>
+<b>擺放示意：</b>背景是 5 間素淨空房（跟電子鼓用同一組），全套 FP-40 去背放進去，大小照實際尺寸抓（含琴架寬 130.7、高 94.9 公分），右下角標「擺放示意圖」、左下角加「※ 示意圖，實際以出貨為準」。居家練習風是從這幾張裁成方形加文案，一樣有標。<br>
+<b>規格數字：</b>全部對過 Roland 官網 FP-40 規格頁（roland.com/global/products/fp-40/specifications）。原說明圖裡「智慧家庭 IoT、OTA 韌體更新、遠端教學即時診斷」那張官網規格沒寫，這次沒放進新圖。App 名稱原圖寫 Piano Sphere、官網規格頁寫 Roland Piano App，新圖統一寫「Roland 官方 App」。<br>
+<b>說明圖重排：</b>功能 5 張＋規格表＋購買須知＋退貨須知，做蘋果風跟科技風兩套；須知文字照原圖抄。功能圖裡的演奏照片是原說明圖裡的 Roland 官方照片。
+</div></div>
+<section class="model" id="top"><div class="mh"><div><h2>FP-40</h2><p>全套（琴架＋三踏板＋琴椅）／單主機</p></div>
+<div class="btns"><a class="dl" href="FP-40_全部圖片.zip" download>下載全部圖片（zip）</a><button data-w="new">只打包新圖</button><button class="ghost" data-w="orig">只打包原圖</button></div></div>
+<h3 id="apple">蘋果風 <small>淺灰白底，全套＋單主機</small></h3><div class="grid" id="g-apple"></div>
+<h3 id="scene">擺放示意 <small>5 間素淨空房，全套去背合成</small></h3><div class="grid scene" id="g-scene"></div>
+<h3 id="home">居家練習情境風 <small>擺放示意裁方形＋文案</small></h3><div class="grid" id="g-home"></div>
+<h3 id="tech">科技機能拆解風 <small>技術圖面底＋規格</small></h3><div class="grid" id="g-tech"></div>
+<h3 id="desc">說明圖重排 <small>功能／規格表／須知</small></h3>
+<p class="sub">蘋果風</p><div class="grid" id="g-desc-apple"></div>
+<p class="sub">科技機能拆解風</p><div class="grid" id="g-desc-tech"></div>
+<h3 id="orig">原圖 <small>PChome 賣場現用：全套主圖 5、單主機主圖 5、說明圖 21</small></h3>
+<details><summary>點開看原圖 31 張</summary><div class="grid orig" id="g-orig"></div></details>
+</section>
+<footer>YA! 玩音樂 內部使用｜2026-11-18 整理</footer>
+<div id="lb"><img alt=""></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+<script>
+const D={"apple": [["01_全套封面.jpg", "全套｜封面"], ["02_全套主圖_黑.jpg", "全套｜主圖 黑"], ["03_全套主圖_白.jpg", "全套｜主圖 白"], ["04_全套黑白雙色.jpg", "全套｜黑白雙色"], ["05_單主機封面.jpg", "單主機｜封面"], ["06_單主機主圖_黑.jpg", "單主機｜主圖 黑"], ["07_單主機主圖_白.jpg", "單主機｜主圖 白"], ["08_單主機角度1.jpg", "單主機｜角度 1"], ["09_單主機角度2.jpg", "單主機｜角度 2"], ["10_黑白兩色.jpg", "黑白兩色"], ["11_面板特寫.jpg", "面板特寫"]], "scene": [["擺放示意1.jpg", "擺放示意 1"], ["擺放示意2.jpg", "擺放示意 2"], ["擺放示意3.jpg", "擺放示意 3"], ["擺放示意4.jpg", "擺放示意 4"], ["擺放示意5.jpg", "擺放示意 5"]], "home": [["01_下班回家彈一首.jpg", "下班回家彈一首"], ["02_插上耳機晚上也能練.jpg", "插上耳機，晚上也能練"], ["03_客廳一角就放得下.jpg", "客廳一角就放得下"]], "tech": [["01_封面.jpg", "封面"], ["02_規格.jpg", "規格"], ["03_音源.jpg", "音源"]], "desc": {"apple": [["01_Piano Reality 音源.jpg", "Piano Reality 音源"], ["02_PHA-4 Standard 琴鍵.jpg", "PHA-4 Standard 琴鍵"], ["03_喇叭有音箱.jpg", "喇叭有音箱"], ["04_Wi-Fi+藍牙 5.4.jpg", "Wi-Fi＋藍牙 5.4"], ["05_主機 14 公斤_12.2 公分.jpg", "主機 14 公斤、12.2 公分"], ["06_規格表.jpg", "規格表"], ["07_購買須知.jpg", "購買須知"], ["08_退貨須知.jpg", "退貨須知"]], "tech": [["01_Piano Reality 音源.jpg", "Piano Reality 音源"], ["02_PHA-4 Standard 琴鍵.jpg", "PHA-4 Standard 琴鍵"], ["03_喇叭有音箱.jpg", "喇叭有音箱"], ["04_Wi-Fi+藍牙 5.4.jpg", "Wi-Fi＋藍牙 5.4"], ["05_主機 14 公斤_12.2 公分.jpg", "主機 14 公斤、12.2 公分"], ["06_規格表.jpg", "規格表"], ["07_購買須知.jpg", "購買須知"], ["08_退貨須知.jpg", "退貨須知"]]}, "orig": [["全套主圖_01.jpg", "全套主圖_01"], ["全套主圖_02.jpg", "全套主圖_02"], ["全套主圖_03.jpg", "全套主圖_03"], ["全套主圖_04.jpg", "全套主圖_04"], ["全套主圖_05.jpg", "全套主圖_05"], ["單主機主圖_01.jpg", "單主機主圖_01"], ["單主機主圖_02.jpg", "單主機主圖_02"], ["單主機主圖_03.jpg", "單主機主圖_03"], ["單主機主圖_04.jpg", "單主機主圖_04"], ["單主機主圖_05.jpg", "單主機主圖_05"], ["說明圖_01.jpg", "說明圖_01"], ["說明圖_02.jpg", "說明圖_02"], ["說明圖_03.jpg", "說明圖_03"], ["說明圖_04.jpg", "說明圖_04"], ["說明圖_05.jpg", "說明圖_05"], ["說明圖_06.jpg", "說明圖_06"], ["說明圖_07.jpg", "說明圖_07"], ["說明圖_08.jpg", "說明圖_08"], ["說明圖_09.jpg", "說明圖_09"], ["說明圖_10.jpg", "說明圖_10"], ["說明圖_11.jpg", "說明圖_11"], ["說明圖_12.jpg", "說明圖_12"], ["說明圖_13.jpg", "說明圖_13"], ["說明圖_14.jpg", "說明圖_14"], ["說明圖_15.jpg", "說明圖_15"], ["說明圖_16.jpg", "說明圖_16"], ["說明圖_17.jpg", "說明圖_17"], ["說明圖_18.jpg", "說明圖_18"], ["說明圖_19.jpg", "說明圖_19"], ["說明圖_20.jpg", "說明圖_20"], ["說明圖_21.jpg", "說明圖_21"]]};
+const enc=s=>s.split('/').map(encodeURIComponent).join('/');
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+function card(path,label,name){return `<div class="card"><img loading="lazy" src="${enc(path)}" alt="${esc(label)}"><div class="cap"><span title="${esc(label)}">${esc(label)}</span><a href="${enc(path)}" download="${esc(name)}">下載</a></div></div>`}
+const fill=(id,dir,list,pre)=>document.getElementById(id).innerHTML=list.map(([f,l])=>card(`${dir}/${f}`,l,`FP-40_${pre}_${f}`)).join('');
+fill('g-apple','apple',D.apple,'蘋果風');fill('g-scene','scene',D.scene,'擺放');fill('g-home','home',D.home,'居家練習');fill('g-tech','tech',D.tech,'科技拆解');
+fill('g-desc-apple','desc/apple',D.desc.apple,'說明圖_蘋果風');fill('g-desc-tech','desc/tech',D.desc.tech,'說明圖_科技風');fill('g-orig','orig',D.orig,'原圖');
+const lb=document.getElementById('lb');
+document.addEventListener('click',e=>{
+  if(e.target.matches('.card img')){lb.querySelector('img').src=e.target.src;lb.classList.add('on')}
+  else if(e.target.closest('#lb'))lb.classList.remove('on');
+});
+document.addEventListener('click',async e=>{
+  const b=e.target.closest('button[data-w]');if(!b)return;
+  const neu=b.dataset.w==='new';
+  const list=neu?[...['apple','scene','home','tech'].flatMap(k=>D[k].map(([f])=>`${k}/${f}`)),...['apple','tech'].flatMap(s=>D.desc[s].map(([f])=>`desc/${s}/${f}`))]:D.orig.map(([f])=>`orig/${f}`);
+  const t=b.textContent;b.disabled=true;
+  try{
+    const z=new JSZip(),dir=`FP-40_${neu?'新圖':'原圖'}`;let n=0;
+    await Promise.all(list.map(async p=>{const r=await fetch(enc(p));if(!r.ok)throw new Error(p);z.file(dir+'/'+p.replace(/\//g,'_'),await r.blob());b.textContent=`打包中 ${++n}/${list.length}`}));
+    const blob=await z.generateAsync({type:'blob'});
+    const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download=dir+'.zip';document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(a.href),5000);
+  }catch(err){alert('打包失敗，請再按一次：'+err.message)}
+  b.disabled=false;b.textContent=t;
+});
+</script></body></html>
