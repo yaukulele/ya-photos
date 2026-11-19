@@ -4,45 +4,39 @@
 *{box-sizing:border-box}html{scroll-behavior:smooth}
 body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC","Microsoft JhengHei",sans-serif;-webkit-font-smoothing:antialiased}
 nav{position:sticky;top:0;z-index:5;background:rgba(245,245,247,.88);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);border-bottom:1px solid var(--line)}
-nav .in{max-width:1200px;margin:0 auto;padding:0 16px;display:flex;gap:2px;overflow-x:auto;scrollbar-width:none}
-nav a{flex:none;padding:14px 11px;color:var(--ink);text-decoration:none;font-size:14px;opacity:.8}
-header{max-width:1200px;margin:0 auto;padding:44px 16px 4px}header h1{font-size:38px;margin:0 0 8px;letter-spacing:-.02em}header p{color:var(--sub);margin:0 0 6px;line-height:1.7}
+nav .in{max-width:1200px;margin:0 auto;padding:0 16px;display:flex;gap:2px;overflow-x:auto;scrollbar-width:none}nav a{flex:none;padding:14px 11px;color:var(--ink);text-decoration:none;font-size:14px;opacity:.8}
+header{max-width:1200px;margin:0 auto;padding:44px 16px 4px}header h1{font-size:38px;margin:0 0 8px}header p{color:var(--sub);margin:0 0 6px;line-height:1.7}
 .note{max-width:1200px;margin:14px auto 0;padding:0 16px}.note div{background:var(--card);border-radius:18px;padding:16px 20px;font-size:14px;line-height:1.8}
 section.model{max-width:1200px;margin:0 auto;padding:52px 16px 8px;scroll-margin-top:50px}
 .mh{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:12px;margin-bottom:14px}.mh h2{font-size:32px;margin:0}.mh p{margin:4px 0 0;color:var(--sub)}
 .btns{display:flex;gap:8px;flex-wrap:wrap}
 a.dl,button{appearance:none;border:0;border-radius:980px;padding:9px 18px;font-size:14px;cursor:pointer;background:var(--blue);color:#fff;text-decoration:none;display:inline-flex;align-items:center;justify-content:center;font-family:inherit}
-a.dl.ghost{background:#e8e8ed;color:var(--ink)}
-button.cp{padding:4px 12px;font-size:12px;background:#e8e8ed;color:var(--ink);flex:none}button.cp.done{background:var(--grn);color:#fff}
+a.dl.ghost{background:#e8e8ed;color:var(--ink)}a.dl.sm{padding:6px 14px;font-size:13px}
+button.cp{padding:4px 12px;font-size:12px;background:#e8e8ed;color:var(--ink)}button.cp.done{background:var(--grn);color:#fff}
 h3{font-size:18px;margin:28px 0 10px;display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}h3 small{font-weight:400;color:var(--sub);font-size:13px}
-.tw{overflow-x:auto;background:var(--card);border-radius:16px}
-table.st{border-collapse:collapse;width:100%;font-size:14px;min-width:760px}table.st th,table.st td{padding:10px 12px;border-bottom:1px solid var(--line);text-align:left;vertical-align:middle}
-table.st th{font-size:12px;color:var(--sub);font-weight:600}table.st tr:last-child td{border-bottom:0}
-.ok{color:var(--grn);font-weight:700}.no{color:var(--red);font-weight:700}.nm{color:#333}
-.two{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:14px}
-.box{background:var(--card);border-radius:16px;padding:14px 16px;min-width:0}.bh{display:flex;justify-content:space-between;align-items:center;margin-bottom:6px}
+.tw{overflow-x:auto;background:var(--card);border-radius:16px}table.st{border-collapse:collapse;width:100%;font-size:14px;min-width:760px}table.st th,table.st td{padding:10px 12px;border-bottom:1px solid var(--line);text-align:left;vertical-align:middle}table.st th{font-size:12px;color:var(--sub)}table.st tr:last-child td{border-bottom:0}
+.ok{color:var(--grn);font-weight:700}.no{color:var(--red);font-weight:700}.wn{font-size:12px;color:#8a4b00;margin-top:4px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:14px}.box{background:var(--card);border-radius:16px;padding:14px 16px;min-width:0}.bh{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;gap:8px}
 pre{white-space:pre-wrap;font-family:inherit;font-size:14px;line-height:1.8;margin:0}
-details.en{margin-top:12px;background:var(--card);border-radius:16px;padding:12px 16px;font-size:13px;color:var(--sub)}details.en pre{font-size:13px;margin-top:8px}
-.warn{background:#fff4e5;border-radius:12px;padding:10px 14px;font-size:14px;color:#8a4b00}
-.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:14px}.grid.orig{grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:10px}
-.grid:empty::after{content:"（還沒有）";color:var(--sub);font-size:13px}
-.card{background:var(--card);border-radius:16px;overflow:hidden;display:flex;flex-direction:column;min-width:0}
-.card img{width:100%;aspect-ratio:850/1100;object-fit:contain;background:#fff;display:block;cursor:zoom-in}
-.card .cap{padding:9px 11px;display:flex;justify-content:space-between;align-items:center;gap:8px;font-size:12px}.card .cap span{color:var(--sub);overflow:hidden;text-overflow:ellipsis;white-space:nowrap;min-width:0}.card .cap a{color:var(--blue);text-decoration:none;flex:none}
+.mb{background:var(--card);border-radius:16px;padding:14px;margin-bottom:14px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:10px}
+.card{background:var(--card);border-radius:12px;overflow:hidden;display:flex;flex-direction:column;min-width:0;border:1px solid var(--line)}
+.card img{width:100%;aspect-ratio:1;object-fit:cover;display:block;cursor:zoom-in;background:#eee}.orig .card img{object-fit:contain;background:#fff;aspect-ratio:850/1100}
+.card .cap{padding:7px 10px;display:flex;justify-content:space-between;gap:8px;font-size:12px}.card .cap span{color:var(--sub)}.card .cap a{color:var(--blue);text-decoration:none}
+details.en{margin-top:12px;background:var(--card);border-radius:16px;padding:12px 16px;font-size:14px}details.en .grid{margin-top:10px}.sub{color:var(--sub)}
 footer{max-width:1200px;margin:40px auto;padding:0 16px;color:var(--sub);font-size:12px}
 #lb{position:fixed;inset:0;background:rgba(0,0,0,.85);display:none;align-items:center;justify-content:center;z-index:20;cursor:zoom-out}#lb img{max-width:94vw;max-height:94vh}
-@media(max-width:760px){header h1{font-size:28px}.mh h2{font-size:24px}.two{grid-template-columns:1fr}}
+@media(max-width:760px){header h1{font-size:28px}.mh h2{font-size:24px}.two{grid-template-columns:1fr}.grid{grid-template-columns:repeat(2,1fr)}}
 </style></head><body>
-<nav><div class="in"><a href="../../">← 上架圖首頁</a><a href="#v1">V1</a><a href="#v1-mm">V1 MM</a><a href="#v1-navy">V1 Limited</a><a href="#v2">V2</a><a href="#v2-denim">V2 Denim</a><a href="#v3">V3</a><a href="#v4">V4</a><a href="#v5">V5</a><a href="#v7">V7</a></div></nav>
-<header><h1>Veelah 木吉他 上架資料</h1><p>官網 V1～V7 全部型號：中文商品特色、規格表、建議商品名稱都可以一鍵複製，原圖可以單張或整包下載。</p></header>
-<div class="note"><div><b>怎麼用：</b>先看每個系列的「型號＆上架狀態」，紅字「還沒上」就是要上的平台；名稱、特色、規格按「複製」貼到 MOMO／PChome 後台。撈單「待辦 → 待上架」也逐筆列好了，上完記得去那邊打勾。<br>
-<b>資料來源：</b>Veelah 台灣官網 veelah.com.tw（2026-11-19 抓），英文介紹已翻成中文並改成好讀的條列，原文在每個系列的「官網英文原文」。<br>
-<b>要注意：</b>官網列出的型號不一定台灣代理都有貨，上架前先跟廠商確認有沒有貨、進價。V7 的 BAS／SAS／SM 是官網的版本代號，官網沒寫差在哪，問廠商後再補說明。官網沒有 V6。</div></div>
+<nav><div class="in"><a href="../../">← 上架圖首頁</a><a href="#v1">V1</a><a href="#v1-mm">V1 MM</a><a href="#v2">V2</a><a href="#v3">V3</a><a href="#v5">V5</a><a href="#v8">V8</a><a href="#togo-s">TOGO S</a><a href="#togo-m">TOGO M</a><a href="all.html">官網全部型號</a></div></nav>
+<header><h1>Veelah 木吉他 上架資料</h1><p>以廠商（中建彭）給的有貨型號為準：建議商品名稱、中文特色、規格表一鍵複製；每款都有西班牙風格場景圖（遠景＋近景），可單張或整包下載。</p></header>
+<div class="note"><div><b>圖怎麼做的：</b>背景是 AI 生成的西班牙／地中海／露營／音樂廳等場景；吉他是 Veelah 官網原廠照片，先用 AI 放大（只放大不重畫）再去背貼上，琴本身的木紋、音孔、琴頭 logo 都是真的。圖上沒有店名。<br>
+<b>國外找的圖：</b>V2 DC 用韓國代理的照片、V3 DC 用泰國樂器行的照片（都是插電款 DCE，外觀相同），上架前跟實品對一下；<br><b>還缺：</b>合板 VOMM、VMCMM 目前只有 MOMO 舊賣場的 640px 斜拍圖，畫質不夠做場景，也建議跟廠商要原圖。<br>
+<b>上完記得：</b>撈單「待辦 → 待上架」打勾。官網 V1～V7 其他型號在最右邊「官網全部型號」。</div></div>
 <section class="model" id="v1"><div class="mh"><div><h2>Veelah V1 系列</h2><p>Veelah 第一個系列、到現在還是賣最好的一款</p></div>
-<div class="btns"><a class="dl" href="v1/Veelah_v1_orig.zip" download>下載原圖（11 張 zip）</a><a class="dl ghost" href="https://www.veelah.com.tw/product-page/v1-series" target="_blank" rel="noopener">官網頁面</a></div></div>
-
-<h3>型號＆上架狀態 <small>建議商品名稱可以直接複製；MOMO／PChome 是 11/19 核對現有賣場</small></h3>
-<div class="tw"><table class="st"><tr><th>型號</th><th>桶型說明</th><th>MOMO</th><th>PChome</th><th>建議商品名稱</th></tr><tr><td><b>D</b></td><td>D 桶（Dreadnought 大桶身，聲音最大、低頻飽滿）</td><td><span class="ok">已上</span></td><td><span class="ok">已上</span></td><td><span class="nm">Veelah V1-D 面單吉他 雲杉單板 桃花心木背側 民謠木吉他</span> <button class="cp" data-t="Veelah V1-D 面單吉他 雲杉單板 桃花心木背側 民謠木吉他">複製</button></td></tr><tr><td><b>DCE</b></td><td>D 桶缺角＋插電</td><td><span class="ok">已上</span></td><td><span class="ok">已上</span></td><td><span class="nm">Veelah V1-DCE 面單吉他 雲杉單板 桃花心木背側 民謠木吉他 插電款</span> <button class="cp" data-t="Veelah V1-DCE 面單吉他 雲杉單板 桃花心木背側 民謠木吉他 插電款">複製</button></td></tr><tr><td><b>OM</b></td><td>OM 桶（中型腰身，好抱、聲音平衡，指彈自彈自唱都適合）</td><td><span class="ok">已上</span></td><td><span class="ok">已上</span></td><td><span class="nm">Veelah V1-OM 面單吉他 雲杉單板 桃花心木背側 民謠木吉他</span> <button class="cp" data-t="Veelah V1-OM 面單吉他 雲杉單板 桃花心木背側 民謠木吉他">複製</button></td></tr><tr><td><b>OMC</b></td><td>OM 桶缺角</td><td><span class="ok">已上</span></td><td><span class="no">還沒上</span></td><td><span class="nm">Veelah V1-OMC 面單吉他 雲杉單板 桃花心木背側 民謠木吉他</span> <button class="cp" data-t="Veelah V1-OMC 面單吉他 雲杉單板 桃花心木背側 民謠木吉他">複製</button></td></tr><tr><td><b>GAC</b></td><td>GA 桶缺角</td><td><span class="ok">已上</span></td><td><span class="ok">已上</span></td><td><span class="nm">Veelah V1-GAC 面單吉他 雲杉單板 桃花心木背側 民謠木吉他</span> <button class="cp" data-t="Veelah V1-GAC 面單吉他 雲杉單板 桃花心木背側 民謠木吉他">複製</button></td></tr><tr><td><b>DC</b></td><td>D 桶缺角</td><td><span class="ok">已上</span></td><td><span class="ok">已上</span></td><td><span class="nm">Veelah V1-DC 面單吉他 雲杉單板 桃花心木背側 民謠木吉他</span> <button class="cp" data-t="Veelah V1-DC 面單吉他 雲杉單板 桃花心木背側 民謠木吉他">複製</button></td></tr><tr><td><b>FE</b></td><td>Folk 小桶＋插電</td><td><span class="no">還沒上</span></td><td><span class="no">還沒上</span></td><td><span class="nm">Veelah V1-FE 面單吉他 雲杉單板 桃花心木背側 民謠木吉他 插電款</span> <button class="cp" data-t="Veelah V1-FE 面單吉他 雲杉單板 桃花心木背側 民謠木吉他 插電款">複製</button></td></tr><tr><td><b>GA</b></td><td>GA 桶（Grand Auditorium，介於 D 與 OM 之間）</td><td><span class="ok">已上</span></td><td><span class="ok">已上</span></td><td><span class="nm">Veelah V1-GA 面單吉他 雲杉單板 桃花心木背側 民謠木吉他</span> <button class="cp" data-t="Veelah V1-GA 面單吉他 雲杉單板 桃花心木背側 民謠木吉他">複製</button></td></tr><tr><td><b>GACE</b></td><td>GA 桶缺角＋插電</td><td><span class="ok">已上</span></td><td><span class="ok">已上</span></td><td><span class="nm">Veelah V1-GACE 面單吉他 雲杉單板 桃花心木背側 民謠木吉他 插電款</span> <button class="cp" data-t="Veelah V1-GACE 面單吉他 雲杉單板 桃花心木背側 民謠木吉他 插電款">複製</button></td></tr><tr><td><b>OM-Sunburst</b></td><td>OM 桶 漸層色（Sunburst）</td><td><span class="no">還沒上</span></td><td><span class="no">還沒上</span></td><td><span class="nm">Veelah V1-OM-Sunburst 面單吉他 雲杉單板 桃花心木背側 民謠木吉他</span> <button class="cp" data-t="Veelah V1-OM-Sunburst 面單吉他 雲杉單板 桃花心木背側 民謠木吉他">複製</button></td></tr><tr><td><b>OMCE</b></td><td>OM 桶缺角＋插電</td><td><span class="ok">已上</span></td><td><span class="no">還沒上</span></td><td><span class="nm">Veelah V1-OMCE 面單吉他 雲杉單板 桃花心木背側 民謠木吉他 插電款</span> <button class="cp" data-t="Veelah V1-OMCE 面單吉他 雲杉單板 桃花心木背側 民謠木吉他 插電款">複製</button></td></tr></table></div>
+<div class="btns"><a class="dl ghost" href="https://www.veelah.com.tw/product-page/v1-series" target="_blank" rel="noopener">官網頁面</a></div></div>
+<h3>廠商有貨型號＆上架狀態</h3>
+<div class="tw"><table class="st"><tr><th>型號</th><th>說明</th><th>MOMO</th><th>PChome</th><th>建議商品名稱</th></tr><tr><td><b>DC</b></td><td>D 桶缺角</td><td><span class="ok">已上</span></td><td><span class="ok">已上</span></td><td><span class="nm">Veelah V1-DC 面單吉他 雲杉單板 桃花心木背側 D桶缺角 民謠木吉他</span> <button class="cp" data-t="Veelah V1-DC 面單吉他 雲杉單板 桃花心木背側 D桶缺角 民謠木吉他">複製</button></td></tr></table></div>
 <div class="two"><div class="box"><div class="bh"><b>商品特色</b><button class="cp" data-t="・Veelah 的起點，也是品牌最暢銷的系列：簡單、不多餘裝飾，就是好彈好聽
 ・雲杉單板面板＋桃花心木背側，聲音明亮有力、越彈越開
 ・背側開孔消光塗裝，木頭不被厚漆悶住，摸起來是木頭的手感
@@ -67,8 +61,7 @@ footer{max-width:1200px;margin:40px auto;padding:0 16px;color:var(--sub);font-si
 弦鈕：鍍鉻封閉式 14:1
 出廠琴弦：Elixir Nanoweb 包膜弦
 拾音器（插電款）：Fishman Presys I
-附件：依賣場搭配
-桶型：D / DCE / OM / OMC / GAC / DC / FE / GA / GACE / OM-Sunburst / OMCE">複製</button></div><pre>面板：雲杉單板
+附件：依賣場搭配">複製</button></div><pre>面板：雲杉單板
 背板：桃花心木
 側板：桃花心木
 音孔花紋：玫瑰木
@@ -83,19 +76,12 @@ footer{max-width:1200px;margin:40px auto;padding:0 16px;color:var(--sub);font-si
 弦鈕：鍍鉻封閉式 14:1
 出廠琴弦：Elixir Nanoweb 包膜弦
 拾音器（插電款）：Fishman Presys I
-附件：依賣場搭配
-桶型：D / DCE / OM / OMC / GAC / DC / FE / GA / GACE / OM-Sunburst / OMCE</pre></div></div>
-<details class="en"><summary>官網英文原文</summary><pre>NATURAL TENDENCIES 
- 
-This is where it all begins.... the iconic V1 was the first series introduced by Veelah and still remains our best selling. It exemplifies the core concept behind the Veelah brand....elegant simplicity. No extra embellishments or glossy varnish...just a straightforward rosewood rosette with an honest open pore finish on back and sides. It features an onboard Fishman preamp.
- 
-The V1 series is prized by players for its style, powerful sound and excellent playability.</pre></details>
-<h3 id="v1-style">西班牙風格圖 <small>製作中，先做樣本給杰哥確認方向</small></h3><div class="grid" data-style="v1"></div>
-<h3>官網原圖 <small>白底，大部分 850×1100</small></h3><div class="grid orig"><div class="card"><img loading="lazy" src="v1/orig/V1-D.jpg?v=1" alt=""><div class="cap"><span>V1-D.jpg　850×1100</span><a href="v1/orig/V1-D.jpg" download>下載</a></div></div><div class="card"><img loading="lazy" src="v1/orig/V1-DCE-1.jpg?v=1" alt=""><div class="cap"><span>V1-DCE-1.jpg　850×1100</span><a href="v1/orig/V1-DCE-1.jpg" download>下載</a></div></div><div class="card"><img loading="lazy" src="v1/orig/V1-OM-1.jpg?v=1" alt=""><div class="cap"><span>V1-OM-1.jpg　850×1100</span><a href="v1/orig/V1-OM-1.jpg" download>下載</a></div></div><div class="card"><img loading="lazy" src="v1/orig/V1-GAC.jpg?v=1" alt=""><div class="cap"><span>V1-GAC.jpg　850×1100</span><a href="v1/orig/V1-GAC.jpg" download>下載</a></div></div><div class="card"><img loading="lazy" src="v1/orig/V1-OMC.jpg?v=1" alt=""><div class="cap"><span>V1-OMC.jpg　850×1100</span><a href="v1/orig/V1-OMC.jpg" download>下載</a></div></div><div class="card"><img loading="lazy" src="v1/orig/V1-OMCE.jpg?v=1" alt=""><div class="cap"><span>V1-OMCE.jpg　850×1100</span><a href="v1/orig/V1-OMCE.jpg" download>下載</a></div></div><div class="card"><img loading="lazy" src="v1/orig/V1-GA_Front.jpg?v=1" alt=""><div class="cap"><span>V1-GA_Front.jpg　850×1100</span><a href="v1/orig/V1-GA_Front.jpg" download>下載</a></div></div><div class="card"><img loading="lazy" src="v1/orig/V1-FE-2.jpg?v=1" alt=""><div class="cap"><span>V1-FE-2.jpg　850×1100</span><a href="v1/orig/V1-FE-2.jpg" download>下載</a></div></div><div class="card"><img loading="lazy" src="v1/orig/V1-GACE_front.jpg?v=1" alt=""><div class="cap"><span>V1-GACE_front.jpg　850×1100</span><a href="v1/orig/V1-GACE_front.jpg" download>下載</a></div></div><div class="card"><img loading="lazy" src="v1/orig/V1-DC-2.jpg?v=1" alt=""><div class="cap"><span>V1-DC-2.jpg　850×1100</span><a href="v1/orig/V1-DC-2.jpg" download>下載</a></div></div><div class="card"><img loading="lazy" src="v1/orig/v1-P.jpg?v=1" alt=""><div class="cap"><span>v1-P.jpg　850×1100</span><a href="v1/orig/v1-P.jpg" download>下載</a></div></div></div></section><section class="model" id="v1-mm"><div class="mh"><div><h2>Veelah V1 MM 系列（桃花心木面板）</h2><p>V1 的全桃花心木外觀版本，聲音更溫暖</p></div>
-<div class="btns"><a class="dl" href="v1-mm/Veelah_v1_mm_orig.zip" download>下載原圖（7 張 zip）</a><a class="dl ghost" href="https://www.veelah.com.tw/product-page/v1-mm-series" target="_blank" rel="noopener">官網頁面</a></div></div>
-<p class="warn">注意：官網規格表的面板寫「Solid Spruce」，應是從 V1 複製過來沒改；MOMO 現有賣場寫桃花心木面單，上架前請看實品確認</p>
-<h3>型號＆上架狀態 <small>建議商品名稱可以直接複製；MOMO／PChome 是 11/19 核對現有賣場</small></h3>
-<div class="tw"><table class="st"><tr><th>型號</th><th>桶型說明</th><th>MOMO</th><th>PChome</th><th>建議商品名稱</th></tr><tr><td><b>DM</b></td><td>D 桶 桃花心木面板</td><td><span class="ok">已上</span></td><td><span class="ok">已上</span></td><td><span class="nm">Veelah V1-DM 面單吉他 桃花心木單板 桃花心木背側 民謠木吉他</span> <button class="cp" data-t="Veelah V1-DM 面單吉他 桃花心木單板 桃花心木背側 民謠木吉他">複製</button></td></tr><tr><td><b>DMC</b></td><td>D 桶缺角 桃花心木面板</td><td><span class="ok">已上</span></td><td><span class="ok">已上</span></td><td><span class="nm">Veelah V1-DMC 面單吉他 桃花心木單板 桃花心木背側 民謠木吉他</span> <button class="cp" data-t="Veelah V1-DMC 面單吉他 桃花心木單板 桃花心木背側 民謠木吉他">複製</button></td></tr><tr><td><b>DMCE</b></td><td>D 桶缺角＋插電 桃花心木面板</td><td><span class="ok">已上</span></td><td><span class="ok">已上</span></td><td><span class="nm">Veelah V1-DMCE 面單吉他 桃花心木單板 桃花心木背側 民謠木吉他 插電款</span> <button class="cp" data-t="Veelah V1-DMCE 面單吉他 桃花心木單板 桃花心木背側 民謠木吉他 插電款">複製</button></td></tr><tr><td><b>OMM</b></td><td>OM 桶 桃花心木面板</td><td><span class="ok">已上</span></td><td><span class="no">還沒上</span></td><td><span class="nm">Veelah V1-OMM 面單吉他 桃花心木單板 桃花心木背側 民謠木吉他</span> <button class="cp" data-t="Veelah V1-OMM 面單吉他 桃花心木單板 桃花心木背側 民謠木吉他">複製</button></td></tr><tr><td><b>OMMC</b></td><td>OM 桶缺角 桃花心木面板</td><td><span class="ok">已上</span></td><td><span class="ok">已上</span></td><td><span class="nm">Veelah V1-OMMC 面單吉他 桃花心木單板 桃花心木背側 民謠木吉他</span> <button class="cp" data-t="Veelah V1-OMMC 面單吉他 桃花心木單板 桃花心木背側 民謠木吉他">複製</button></td></tr><tr><td><b>OMMCE</b></td><td>OM 桶缺角＋插電 桃花心木面板</td><td><span class="ok">已上</span></td><td><span class="ok">已上</span></td><td><span class="nm">Veelah V1-OMMCE 面單吉他 桃花心木單板 桃花心木背側 民謠木吉他 插電款</span> <button class="cp" data-t="Veelah V1-OMMCE 面單吉他 桃花心木單板 桃花心木背側 民謠木吉他 插電款">複製</button></td></tr><tr><td><b>PM</b></td><td>Parlor 小桶 桃花心木面板</td><td><span class="no">還沒上</span></td><td><span class="no">還沒上</span></td><td><span class="nm">Veelah V1-PM 面單吉他 桃花心木單板 桃花心木背側 民謠木吉他</span> <button class="cp" data-t="Veelah V1-PM 面單吉他 桃花心木單板 桃花心木背側 民謠木吉他">複製</button></td></tr></table></div>
+附件：依賣場搭配</pre></div></div>
+<h3>西班牙風格圖 <small>1500×1500，每個場景一張遠景＋一張近景</small></h3><div class="mb"><div class="bh"><b>V1-DC</b><a class="dl sm" href="v1/spain/V1_DC_spain.zip" download>整包下載 6 張</a></div><div class="grid sp"><div class="card"><img loading="lazy" src="v1/spain/V1-DC_s1_wide.jpg?v=2" alt=""><div class="cap"><span>遠景</span><a href="v1/spain/V1-DC_s1_wide.jpg" download>下載</a></div></div><div class="card"><img loading="lazy" src="v1/spain/V1-DC_s1_close.jpg?v=2" alt=""><div class="cap"><span>近景</span><a href="v1/spain/V1-DC_s1_close.jpg" download>下載</a></div></div><div class="card"><img loading="lazy" src="v1/spain/V1-DC_s11_wide.jpg?v=2" alt=""><div class="cap"><span>遠景</span><a href="v1/spain/V1-DC_s11_wide.jpg" download>下載</a></div></div><div class="card"><img loading="lazy" src="v1/spain/V1-DC_s11_close.jpg?v=2" alt=""><div class="cap"><span>近景</span><a href="v1/spain/V1-DC_s11_close.jpg" download>下載</a></div></div><div class="card"><img loading="lazy" src="v1/spain/V1-DC_s6_wide.jpg?v=2" alt=""><div class="cap"><span>遠景</span><a href="v1/spain/V1-DC_s6_wide.jpg" download>下載</a></div></div><div class="card"><img loading="lazy" src="v1/spain/V1-DC_s6_close.jpg?v=2" alt=""><div class="cap"><span>近景</span><a href="v1/spain/V1-DC_s6_close.jpg" download>下載</a></div></div></div></div>
+<details class="en"><summary>官網原圖（11 張，白底）</summary><div class="grid orig"><div class="card"><img loading="lazy" src="v1/orig/V1-D.jpg?v=2" alt=""><div class="cap"><span>V1-D.jpg</span><a href="v1/orig/V1-D.jpg" download>下載</a></div></div><div class="card"><img loading="lazy" src="v1/orig/V1-DCE-1.jpg?v=2" alt=""><div class="cap"><span>V1-DCE-1.jpg</span><a href="v1/orig/V1-DCE-1.jpg" download>下載</a></div></div><div class="card"><img loading="lazy" src="v1/orig/V1-OM-1.jpg?v=2" alt=""><div class="cap"><span>V1-OM-1.jpg</span><a href="v1/orig/V1-OM-1.jpg" download>下載</a></div></div><div class="card"><img loading="lazy" src="v1/orig/V1-GAC.jpg?v=2" alt=""><div class="cap"><span>V1-GAC.jpg</span><a href="v1/orig/V1-GAC.jpg" download>下載</a></div></div><div class="card"><img loading="lazy" src="v1/orig/V1-OMC.jpg?v=2" alt=""><div class="cap"><span>V1-OMC.jpg</span><a href="v1/orig/V1-OMC.jpg" download>下載</a></div></div><div class="card"><img loading="lazy" src="v1/orig/V1-OMCE.jpg?v=2" alt=""><div class="cap"><span>V1-OMCE.jpg</span><a href="v1/orig/V1-OMCE.jpg" download>下載</a></div></div><div class="card"><img loading="lazy" src="v1/orig/V1-GA_Front.jpg?v=2" alt=""><div class="cap"><span>V1-GA_Front.jpg</span><a href="v1/orig/V1-GA_Front.jpg" download>下載</a></div></div><div class="card"><img loading="lazy" src="v1/orig/V1-FE-2.jpg?v=2" alt=""><div class="cap"><span>V1-FE-2.jpg</span><a href="v1/orig/V1-FE-2.jpg" download>下載</a></div></div><div class="card"><img loading="lazy" src="v1/orig/V1-GACE_front.jpg?v=2" alt=""><div class="cap"><span>V1-GACE_front.jpg</span><a href="v1/orig/V1-GACE_front.jpg" download>下載</a></div></div><div class="card"><img loading="lazy" src="v1/orig/V1-DC-2.jpg?v=2" alt=""><div class="cap"><span>V1-DC-2.jpg</span><a href="v1/orig/V1-DC-2.jpg" download>下載</a></div></div><div class="card"><img loading="lazy" src="v1/orig/v1-P.jpg?v=2" alt=""><div class="cap"><span>v1-P.jpg</span><a href="v1/orig/v1-P.jpg" download>下載</a></div></div></div></details></section><section class="model" id="v1-mm"><div class="mh"><div><h2>Veelah V1 MM 系列（桃花心木面板）</h2><p>V1 的全桃花心木外觀版本，聲音更溫暖</p></div>
+<div class="btns"><a class="dl ghost" href="https://www.veelah.com.tw/product-page/v1-mm-series" target="_blank" rel="noopener">官網頁面</a></div></div>
+<h3>廠商有貨型號＆上架狀態</h3>
+<div class="tw"><table class="st"><tr><th>型號</th><th>說明</th><th>MOMO</th><th>PChome</th><th>建議商品名稱</th></tr><tr><td><b>DM</b></td><td>D 桶 桃花心木面板</td><td><span class="ok">已上</span></td><td><span class="ok">已上</span></td><td><span class="nm">Veelah V1-DM 面單吉他 桃花心木單板 D桶 民謠木吉他</span> <button class="cp" data-t="Veelah V1-DM 面單吉他 桃花心木單板 D桶 民謠木吉他">複製</button></td></tr><tr><td><b>DMC</b></td><td>D 桶缺角 桃花心木面板</td><td><span class="ok">已上</span></td><td><span class="ok">已上</span></td><td><span class="nm">Veelah V1-DMC 面單吉他 桃花心木單板 D桶缺角 民謠木吉他</span> <button class="cp" data-t="Veelah V1-DMC 面單吉他 桃花心木單板 D桶缺角 民謠木吉他">複製</button></td></tr></table></div>
 <div class="two"><div class="box"><div class="bh"><b>商品特色</b><button class="cp" data-t="・V1 系列的桃花心木面板版本，整把琴是深色木紋，外觀沉穩
 ・桃花心木面板聲音偏溫暖、中頻厚，自彈自唱很好襯人聲
 ・開孔消光塗裝，保留木頭原本的手感與共鳴
@@ -105,7 +91,7 @@ The V1 series is prized by players for its style, powerful sound and excellent p
 ・開孔消光塗裝，保留木頭原本的手感與共鳴
 ・NuBone 上下弦枕、Elixir 包膜弦出廠
 ・插電款（CE）搭載 Fishman Presys I 前級</pre></div>
-<div class="box"><div class="bh"><b>規格表</b><button class="cp" data-t="面板：桃花心木單板（官網表格寫雲杉，請看實品確認）
+<div class="box"><div class="bh"><b>規格表</b><button class="cp" data-t="面板：桃花心木單板
 背板：桃花心木
 側板：桃花心木
 音孔花紋：玫瑰木
@@ -120,8 +106,7 @@ The V1 series is prized by players for its style, powerful sound and excellent p
 弦鈕：鍍鉻封閉式 14:1
 出廠琴弦：Elixir Nanoweb 包膜弦
 拾音器（插電款）：Fishman Presys I
-附件：依賣場搭配
-桶型：DM / DMC / DMCE / OMM / OMMC / OMMCE / PM">複製</button></div><pre>面板：桃花心木單板（官網表格寫雲杉，請看實品確認）
+附件：依賣場搭配">複製</button></div><pre>面板：桃花心木單板
 背板：桃花心木
 側板：桃花心木
 音孔花紋：玫瑰木
@@ -136,72 +121,12 @@ The V1 series is prized by players for its style, powerful sound and excellent p
 弦鈕：鍍鉻封閉式 14:1
 出廠琴弦：Elixir Nanoweb 包膜弦
 拾音器（插電款）：Fishman Presys I
-附件：依賣場搭配
-桶型：DM / DMC / DMCE / OMM / OMMC / OMMCE / PM</pre></div></div>
-<details class="en"><summary>官網英文原文</summary><pre>NATURAL TENDENCIES 
- 
-This is where it all begins.... the iconic V1 was the first series introduced by Veelah and still remains our best selling. It exemplifies the core concept behind the Veelah brand....elegant simplicity. No extra embellishments or glossy varnish...just a straightforward rosewood rosette with an honest open pore finish on back and sides. It features an onboard Fishman preamp.
- 
-The V1 series is prized by players for its style, powerful sound and excellent playability.</pre></details>
-<h3 id="v1-mm-style">西班牙風格圖 <small>製作中，先做樣本給杰哥確認方向</small></h3><div class="grid" data-style="v1-mm"></div>
-<h3>官網原圖 <small>白底，大部分 850×1100</small></h3><div class="grid orig"><div class="card"><img loading="lazy" src="v1-mm/orig/V1-DMC.jpg?v=1" alt=""><div class="cap"><span>V1-DMC.jpg　850×1100</span><a href="v1-mm/orig/V1-DMC.jpg" download>下載</a></div></div><div class="card"><img loading="lazy" src="v1-mm/orig/V1-DM.jpg?v=1" alt=""><div class="cap"><span>V1-DM.jpg　850×1100</span><a href="v1-mm/orig/V1-DM.jpg" download>下載</a></div></div><div class="card"><img loading="lazy" src="v1-mm/orig/V1-OMM.jpg?v=1" alt=""><div class="cap"><span>V1-OMM.jpg　850×1100</span><a href="v1-mm/orig/V1-OMM.jpg" download>下載</a></div></div><div class="card"><img loading="lazy" src="v1-mm/orig/V1-DMCE.jpg?v=1" alt=""><div class="cap"><span>V1-DMCE.jpg　850×1100</span><a href="v1-mm/orig/V1-DMCE.jpg" download>下載</a></div></div><div class="card"><img loading="lazy" src="v1-mm/orig/V1-OMMC-1.jpg?v=1" alt=""><div class="cap"><span>V1-OMMC-1.jpg　850×1100</span><a href="v1-mm/orig/V1-OMMC-1.jpg" download>下載</a></div></div><div class="card"><img loading="lazy" src="v1-mm/orig/V1-OMMCE.jpg?v=1" alt=""><div class="cap"><span>V1-OMMCE.jpg　850×1100</span><a href="v1-mm/orig/V1-OMMCE.jpg" download>下載</a></div></div><div class="card"><img loading="lazy" src="v1-mm/orig/V1-PM_Front.jpg?v=1" alt=""><div class="cap"><span>V1-PM_Front.jpg　850×1100</span><a href="v1-mm/orig/V1-PM_Front.jpg" download>下載</a></div></div></div></section><section class="model" id="v1-navy"><div class="mh"><div><h2>Veelah V1 Navy 海軍藍限定款</h2><p>2021 Pantone 年度色海軍藍，限定款</p></div>
-<div class="btns"><a class="dl" href="v1-navy/Veelah_v1_navy_orig.zip" download>下載原圖（5 張 zip）</a><a class="dl ghost" href="https://www.veelah.com.tw/product-page/v1-series-%E7%9A%84%E5%89%AF%E6%9C%AC" target="_blank" rel="noopener">官網頁面</a></div></div>
-
-<h3>型號＆上架狀態 <small>建議商品名稱可以直接複製；MOMO／PChome 是 11/19 核對現有賣場</small></h3>
-<div class="tw"><table class="st"><tr><th>型號</th><th>桶型說明</th><th>MOMO</th><th>PChome</th><th>建議商品名稱</th></tr><tr><td><b>OM</b></td><td>OM 桶（中型腰身，好抱、聲音平衡，指彈自彈自唱都適合）</td><td><span class="ok">已上</span></td><td><span class="no">還沒上</span></td><td><span class="nm">Veelah V1-OM Navy 海軍藍限定 面單吉他 雲杉單板 桃花心木背側 民謠木吉他</span> <button class="cp" data-t="Veelah V1-OM Navy 海軍藍限定 面單吉他 雲杉單板 桃花心木背側 民謠木吉他">複製</button></td></tr></table></div>
-<div class="two"><div class="box"><div class="bh"><b>商品特色</b><button class="cp" data-t="・V1 系列的限定色：海軍藍面板，用的是 2021 Pantone 年度代表色
-・Koa 夏威夷相思木音孔花紋＋桃花心木滾邊，跟藍色面板搭起來很有質感
-・雲杉單板面板＋桃花心木背側，聲音跟經典 V1 一樣明亮有力
-・OM 桶身，好抱好彈，自彈自唱、指彈都適合
-・牛骨上下弦枕、Elixir 包膜弦出廠，插電款搭載 Fishman Presys I">複製</button></div><pre>・V1 系列的限定色：海軍藍面板，用的是 2021 Pantone 年度代表色
-・Koa 夏威夷相思木音孔花紋＋桃花心木滾邊，跟藍色面板搭起來很有質感
-・雲杉單板面板＋桃花心木背側，聲音跟經典 V1 一樣明亮有力
-・OM 桶身，好抱好彈，自彈自唱、指彈都適合
-・牛骨上下弦枕、Elixir 包膜弦出廠，插電款搭載 Fishman Presys I</pre></div>
-<div class="box"><div class="bh"><b>規格表</b><button class="cp" data-t="面板：雲杉單板（海軍藍）
-背板：桃花心木
-側板：桃花心木
-音孔花紋：夏威夷相思木（Koa）
-琴頸：桃花心木
-指板：鐵木（Pau Ferro）
-琴橋：鐵木（Pau Ferro）
-滾邊：桃花心木
-弦長：649 mm
-上弦枕寬：43 mm
-塗裝：開孔消光
-上／下弦枕：牛骨
-弦鈕：鍍鉻封閉式 14:1
-出廠琴弦：Elixir Nanoweb 包膜弦
-拾音器（插電款）：Fishman Presys I
-附件：依賣場搭配
-桶型：OM">複製</button></div><pre>面板：雲杉單板（海軍藍）
-背板：桃花心木
-側板：桃花心木
-音孔花紋：夏威夷相思木（Koa）
-琴頸：桃花心木
-指板：鐵木（Pau Ferro）
-琴橋：鐵木（Pau Ferro）
-滾邊：桃花心木
-弦長：649 mm
-上弦枕寬：43 mm
-塗裝：開孔消光
-上／下弦枕：牛骨
-弦鈕：鍍鉻封閉式 14:1
-出廠琴弦：Elixir Nanoweb 包膜弦
-拾音器（插電款）：Fishman Presys I
-附件：依賣場搭配
-桶型：OM</pre></div></div>
-<details class="en"><summary>官網英文原文</summary><pre>NATURAL TENDENCIES 
- 
-V1 Navy Limited Edition
- 
-Newest addition to our iconic V1 series. Features pantone color of the year 2021, the classic navy blue pair with koa wooden rosette &amp; mahogany binding, which dicovered a new look for nostalgic V1 series.</pre></details>
-<h3 id="v1-navy-style">西班牙風格圖 <small>製作中，先做樣本給杰哥確認方向</small></h3><div class="grid" data-style="v1-navy"></div>
-<h3>官網原圖 <small>白底，大部分 850×1100</small></h3><div class="grid orig"><div class="card"><img loading="lazy" src="v1-navy/orig/V1-OM-NAVY.jpg?v=1" alt=""><div class="cap"><span>V1-OM-NAVY.jpg　850×1100</span><a href="v1-navy/orig/V1-OM-NAVY.jpg" download>下載</a></div></div><div class="card"><img loading="lazy" src="v1-navy/orig/V1-OM-NAVY_Front.jpg?v=1" alt=""><div class="cap"><span>V1-OM-NAVY_Front.jpg　850×1100</span><a href="v1-navy/orig/V1-OM-NAVY_Front.jpg" download>下載</a></div></div><div class="card"><img loading="lazy" src="v1-navy/orig/V1-NAVY-DETAIL_1.jpg?v=1" alt=""><div class="cap"><span>V1-NAVY-DETAIL_1.jpg　850×1100</span><a href="v1-navy/orig/V1-NAVY-DETAIL_1.jpg" download>下載</a></div></div><div class="card"><img loading="lazy" src="v1-navy/orig/Panetone01.jpg?v=1" alt=""><div class="cap"><span>Panetone01.jpg　850×1100</span><a href="v1-navy/orig/Panetone01.jpg" download>下載</a></div></div><div class="card"><img loading="lazy" src="v1-navy/orig/Panetone_2.jpg?v=1" alt=""><div class="cap"><span>Panetone_2.jpg　850×1100</span><a href="v1-navy/orig/Panetone_2.jpg" download>下載</a></div></div></div></section><section class="model" id="v2"><div class="mh"><div><h2>Veelah V2 系列</h2><p>低調的華麗：拼花音孔＋亮光塗裝</p></div>
-<div class="btns"><a class="dl" href="v2/Veelah_v2_orig.zip" download>下載原圖（3 張 zip）</a><a class="dl ghost" href="https://www.veelah.com.tw/product-page/v2-series" target="_blank" rel="noopener">官網頁面</a></div></div>
-
-<h3>型號＆上架狀態 <small>建議商品名稱可以直接複製；MOMO／PChome 是 11/19 核對現有賣場</small></h3>
-<div class="tw"><table class="st"><tr><th>型號</th><th>桶型說明</th><th>MOMO</th><th>PChome</th><th>建議商品名稱</th></tr><tr><td><b>OM</b></td><td>OM 桶（中型腰身，好抱、聲音平衡，指彈自彈自唱都適合）</td><td><span class="no">還沒上</span></td><td><span class="ok">已上</span></td><td><span class="nm">Veelah V2-OM 面單吉他 西加雲杉單板 桃花心木背側 民謠木吉他</span> <button class="cp" data-t="Veelah V2-OM 面單吉他 西加雲杉單板 桃花心木背側 民謠木吉他">複製</button></td></tr><tr><td><b>GAC</b></td><td>GA 桶缺角</td><td><span class="ok">已上</span></td><td><span class="ok">已上</span></td><td><span class="nm">Veelah V2-GAC 面單吉他 西加雲杉單板 桃花心木背側 民謠木吉他</span> <button class="cp" data-t="Veelah V2-GAC 面單吉他 西加雲杉單板 桃花心木背側 民謠木吉他">複製</button></td></tr><tr><td><b>D</b></td><td>D 桶（Dreadnought 大桶身，聲音最大、低頻飽滿）</td><td><span class="no">還沒上</span></td><td><span class="no">還沒上</span></td><td><span class="nm">Veelah V2-D 面單吉他 西加雲杉單板 桃花心木背側 民謠木吉他</span> <button class="cp" data-t="Veelah V2-D 面單吉他 西加雲杉單板 桃花心木背側 民謠木吉他">複製</button></td></tr></table></div>
+附件：依賣場搭配</pre></div></div>
+<h3>西班牙風格圖 <small>1500×1500，每個場景一張遠景＋一張近景</small></h3><div class="mb"><div class="bh"><b>V1-DM</b><a class="dl sm" href="v1-mm/spain/V1_DM_spain.zip" download>整包下載 6 張</a></div><div class="grid sp"><div class="card"><img loading="lazy" src="v1-mm/spain/V1-DM_s14_wide.jpg?v=2" alt=""><div class="cap"><span>遠景</span><a href="v1-mm/spain/V1-DM_s14_wide.jpg" download>下載</a></div></div><div class="card"><img loading="lazy" src="v1-mm/spain/V1-DM_s14_close.jpg?v=2" alt=""><div class="cap"><span>近景</span><a href="v1-mm/spain/V1-DM_s14_close.jpg" download>下載</a></div></div><div class="card"><img loading="lazy" src="v1-mm/spain/V1-DM_s2_wide.jpg?v=2" alt=""><div class="cap"><span>遠景</span><a href="v1-mm/spain/V1-DM_s2_wide.jpg" download>下載</a></div></div><div class="card"><img loading="lazy" src="v1-mm/spain/V1-DM_s2_close.jpg?v=2" alt=""><div class="cap"><span>近景</span><a href="v1-mm/spain/V1-DM_s2_close.jpg" download>下載</a></div></div><div class="card"><img loading="lazy" src="v1-mm/spain/V1-DM_s9_wide.jpg?v=2" alt=""><div class="cap"><span>遠景</span><a href="v1-mm/spain/V1-DM_s9_wide.jpg" download>下載</a></div></div><div class="card"><img loading="lazy" src="v1-mm/spain/V1-DM_s9_close.jpg?v=2" alt=""><div class="cap"><span>近景</span><a href="v1-mm/spain/V1-DM_s9_close.jpg" download>下載</a></div></div></div></div><div class="mb"><div class="bh"><b>V1-DMC</b><a class="dl sm" href="v1-mm/spain/V1_DMC_spain.zip" download>整包下載 6 張</a></div><div class="grid sp"><div class="card"><img loading="lazy" src="v1-mm/spain/V1-DMC_s12_wide.jpg?v=2" alt=""><div class="cap"><span>遠景</span><a href="v1-mm/spain/V1-DMC_s12_wide.jpg" download>下載</a></div></div><div class="card"><img loading="lazy" src="v1-mm/spain/V1-DMC_s12_close.jpg?v=2" alt=""><div class="cap"><span>近景</span><a href="v1-mm/spain/V1-DMC_s12_close.jpg" download>下載</a></div></div><div class="card"><img loading="lazy" src="v1-mm/spain/V1-DMC_s16_wide.jpg?v=2" alt=""><div class="cap"><span>遠景</span><a href="v1-mm/spain/V1-DMC_s16_wide.jpg" download>下載</a></div></div><div class="card"><img loading="lazy" src="v1-mm/spain/V1-DMC_s16_close.jpg?v=2" alt=""><div class="cap"><span>近景</span><a href="v1-mm/spain/V1-DMC_s16_close.jpg" download>下載</a></div></div><div class="card"><img loading="lazy" src="v1-mm/spain/V1-DMC_s3_wide.jpg?v=2" alt=""><div class="cap"><span>遠景</span><a href="v1-mm/spain/V1-DMC_s3_wide.jpg" download>下載</a></div></div><div class="card"><img loading="lazy" src="v1-mm/spain/V1-DMC_s3_close.jpg?v=2" alt=""><div class="cap"><span>近景</span><a href="v1-mm/spain/V1-DMC_s3_close.jpg" download>下載</a></div></div></div></div>
+<details class="en"><summary>官網原圖（7 張，白底）</summary><div class="grid orig"><div class="card"><img loading="lazy" src="v1-mm/orig/V1-DMC.jpg?v=2" alt=""><div class="cap"><span>V1-DMC.jpg</span><a href="v1-mm/orig/V1-DMC.jpg" download>下載</a></div></div><div class="card"><img loading="lazy" src="v1-mm/orig/V1-DM.jpg?v=2" alt=""><div class="cap"><span>V1-DM.jpg</span><a href="v1-mm/orig/V1-DM.jpg" download>下載</a></div></div><div class="card"><img loading="lazy" src="v1-mm/orig/V1-OMM.jpg?v=2" alt=""><div class="cap"><span>V1-OMM.jpg</span><a href="v1-mm/orig/V1-OMM.jpg" download>下載</a></div></div><div class="card"><img loading="lazy" src="v1-mm/orig/V1-DMCE.jpg?v=2" alt=""><div class="cap"><span>V1-DMCE.jpg</span><a href="v1-mm/orig/V1-DMCE.jpg" download>下載</a></div></div><div class="card"><img loading="lazy" src="v1-mm/orig/V1-OMMC-1.jpg?v=2" alt=""><div class="cap"><span>V1-OMMC-1.jpg</span><a href="v1-mm/orig/V1-OMMC-1.jpg" download>下載</a></div></div><div class="card"><img loading="lazy" src="v1-mm/orig/V1-OMMCE.jpg?v=2" alt=""><div class="cap"><span>V1-OMMCE.jpg</span><a href="v1-mm/orig/V1-OMMCE.jpg" download>下載</a></div></div><div class="card"><img loading="lazy" src="v1-mm/orig/V1-PM_Front.jpg?v=2" alt=""><div class="cap"><span>V1-PM_Front.jpg</span><a href="v1-mm/orig/V1-PM_Front.jpg" download>下載</a></div></div></div></details></section><section class="model" id="v2"><div class="mh"><div><h2>Veelah V2 系列</h2><p>低調的華麗：拼花音孔＋亮光塗裝</p></div>
+<div class="btns"><a class="dl ghost" href="https://www.veelah.com.tw/product-page/v2-series" target="_blank" rel="noopener">官網頁面</a></div></div>
+<h3>廠商有貨型號＆上架狀態</h3>
+<div class="tw"><table class="st"><tr><th>型號</th><th>說明</th><th>MOMO</th><th>PChome</th><th>建議商品名稱</th></tr><tr><td><b>DC</b></td><td>D 桶缺角</td><td><span class="no">還沒上</span></td><td><span class="no">還沒上</span></td><td><span class="nm">Veelah V2-DC 面單吉他 西加雲杉單板 桃花心木背側 D桶缺角 民謠木吉他</span> <button class="cp" data-t="Veelah V2-DC 面單吉他 西加雲杉單板 桃花心木背側 D桶缺角 民謠木吉他">複製</button><div class="wn">官網沒有照片；圖用韓國代理 Musicians Club 的 V2-DCE（插電款）照片，外觀相同，側邊多前級面板</div></td></tr></table></div>
 <div class="two"><div class="box"><div class="bh"><b>商品特色</b><button class="cp" data-t="・想要多一點亮點、又保有 Veelah 簡潔風格的人，就是 V2
 ・音孔花紋用 Koa、斑紋楓木、紫檀、玫瑰木拼出來，每一把都不太一樣
 ・西加雲杉單板面板＋桃花心木背側，亮光塗裝
@@ -226,8 +151,7 @@ Newest addition to our iconic V1 series. Features pantone color of the year 2021
 弦鈕：Veelah 訂製開放式 16:1
 出廠琴弦：Elixir Nanoweb 包膜弦
 拾音器（插電款）：Fishman GT2
-附件：原廠豪華帆布琴袋
-桶型：OM / GAC / D">複製</button></div><pre>面板：西加雲杉單板
+附件：原廠豪華帆布琴袋">複製</button></div><pre>面板：西加雲杉單板
 背板：桃花心木
 側板：桃花心木
 音孔花紋：多種木料拼花（Koa、斑紋楓木、紫檀、玫瑰木）
@@ -242,75 +166,12 @@ Newest addition to our iconic V1 series. Features pantone color of the year 2021
 弦鈕：Veelah 訂製開放式 16:1
 出廠琴弦：Elixir Nanoweb 包膜弦
 拾音器（插電款）：Fishman GT2
-附件：原廠豪華帆布琴袋
-桶型：OM / GAC / D</pre></div></div>
-<details class="en"><summary>官網英文原文</summary><pre>UNDERSTATED OPULENCE
- 
-The V2 was designed for players desiring a bit of panache while maintaining the refined Veelah look. This rosette combines Koa, Spalted Maple, Paduak, and Rosewood for one-of-a-kind artistry. It also features a gloss finish, mahogany back and sides, an onboard Fishman preamp and customized Veelah open geared machine heads.</pre></details>
-<h3 id="v2-style">西班牙風格圖 <small>製作中，先做樣本給杰哥確認方向</small></h3><div class="grid" data-style="v2"></div>
-<h3>官網原圖 <small>白底，大部分 850×1100</small></h3><div class="grid orig"><div class="card"><img loading="lazy" src="v2/orig/V2-GAC.jpg?v=1" alt=""><div class="cap"><span>V2-GAC.jpg　850×1100</span><a href="v2/orig/V2-GAC.jpg" download>下載</a></div></div><div class="card"><img loading="lazy" src="v2/orig/V2-D.jpg?v=1" alt=""><div class="cap"><span>V2-D.jpg　850×1100</span><a href="v2/orig/V2-D.jpg" download>下載</a></div></div><div class="card"><img loading="lazy" src="v2/orig/V2-OM.jpg?v=1" alt=""><div class="cap"><span>V2-OM.jpg　850×1100</span><a href="v2/orig/V2-OM.jpg" download>下載</a></div></div></div></section><section class="model" id="v2-denim"><div class="mh"><div><h2>Veelah V2 Denim 丹寧限定系列</h2><p>虎紋桃花心木＋丹寧色塗裝，一眼就認得出來</p></div>
-<div class="btns"><a class="dl" href="v2-denim/Veelah_v2_denim_orig.zip" download>下載原圖（7 張 zip）</a><a class="dl ghost" href="https://www.veelah.com.tw/product-page/v2-denim-series" target="_blank" rel="noopener">官網頁面</a></div></div>
-
-<h3>型號＆上架狀態 <small>建議商品名稱可以直接複製；MOMO／PChome 是 11/19 核對現有賣場</small></h3>
-<div class="tw"><table class="st"><tr><th>型號</th><th>桶型說明</th><th>MOMO</th><th>PChome</th><th>建議商品名稱</th></tr><tr><td><b>OM</b></td><td>OM 桶（中型腰身，好抱、聲音平衡，指彈自彈自唱都適合）</td><td><span class="no">還沒上</span></td><td><span class="no">還沒上</span></td><td><span class="nm">Veelah V2-OM Denim 丹寧 面單吉他 雲杉單板 虎紋桃花心木背側 民謠木吉他</span> <button class="cp" data-t="Veelah V2-OM Denim 丹寧 面單吉他 雲杉單板 虎紋桃花心木背側 民謠木吉他">複製</button></td></tr></table></div>
-<div class="two"><div class="box"><div class="bh"><b>商品特色</b><button class="cp" data-t="・背側是虎紋桃花心木，再上一層丹寧藍色塗裝，外觀非常有個性
-・雲杉單板面板，共鳴清楚、表現力好
-・珍珠貝音孔花紋、玫瑰木滾邊，細節很講究
-・古銅色 18:1 弦鈕，復古感跟穩定度都有
-・牛骨上下弦枕、Elixir 包膜弦出廠">複製</button></div><pre>・背側是虎紋桃花心木，再上一層丹寧藍色塗裝，外觀非常有個性
-・雲杉單板面板，共鳴清楚、表現力好
-・珍珠貝音孔花紋、玫瑰木滾邊，細節很講究
-・古銅色 18:1 弦鈕，復古感跟穩定度都有
-・牛骨上下弦枕、Elixir 包膜弦出廠</pre></div>
-<div class="box"><div class="bh"><b>規格表</b><button class="cp" data-t="面板：雲杉單板
-背板：虎紋桃花心木
-側板：虎紋桃花心木
-音孔花紋：珍珠貝
-琴頸：桃花心木
-指板：玫瑰木
-琴橋：玫瑰木
-滾邊：玫瑰木
-弦長：649 mm
-上弦枕寬：43 mm
-塗裝：開孔丹寧色塗裝
-上／下弦枕：牛骨
-弦鈕：18:1（古銅色）
-出廠琴弦：Elixir Nanoweb 包膜弦
-拾音器（插電款）：依型號（有插電款）
-附件：依賣場搭配
-桶型：OM">複製</button></div><pre>面板：雲杉單板
-背板：虎紋桃花心木
-側板：虎紋桃花心木
-音孔花紋：珍珠貝
-琴頸：桃花心木
-指板：玫瑰木
-琴橋：玫瑰木
-滾邊：玫瑰木
-弦長：649 mm
-上弦枕寬：43 mm
-塗裝：開孔丹寧色塗裝
-上／下弦枕：牛骨
-弦鈕：18:1（古銅色）
-出廠琴弦：Elixir Nanoweb 包膜弦
-拾音器（插電款）：依型號（有插電款）
-附件：依賣場搭配
-桶型：OM</pre></div></div>
-<details class="en"><summary>官網英文原文</summary><pre>V2 Exotic Mahogany Denim Series
- 
-Introducing the New Veelah Acoustic Guitar
-Crafted for those who seek artistry in both sound and style, the latest addition to Veelah Guitars redefines elegance and performance.
- 
-Featuring a solid spruce top, this guitar delivers unparalleled resonance and clarity, perfect for players who demand expressive, dynamic tones. The flamed mahogany back and sides, adorned with a distinctive denim finish, create a striking visual that’s as bold as your music.
- 
-Adding to its unique character, this model boasts antique brass plate hardware, combining vintage charm with modern reliability. The mother-of-pearl rosette serves as a luxurious touch, reflecting Veelah&#x27;s commitment to craftsmanship and attention to detail.
- 
-This guitar isn&#x27;t just an instrument—it&#x27;s a statement. Whether on stage, in the studio, or in the comfort of your home, the new Veelah guitar invites you to play with confidence and inspire those around you.</pre></details>
-<h3 id="v2-denim-style">西班牙風格圖 <small>製作中，先做樣本給杰哥確認方向</small></h3><div class="grid" data-style="v2-denim"></div>
-<h3>官網原圖 <small>白底，大部分 850×1100</small></h3><div class="grid orig"><div class="card"><img loading="lazy" src="v2-denim/orig/V2-OM_Denim.jpg?v=1" alt=""><div class="cap"><span>V2-OM_Denim.jpg　1800×2330</span><a href="v2-denim/orig/V2-OM_Denim.jpg" download>下載</a></div></div><div class="card"><img loading="lazy" src="v2-denim/orig/V2-OM_Denim_Back.jpg?v=1" alt=""><div class="cap"><span>V2-OM_Denim_Back.jpg　1800×2330</span><a href="v2-denim/orig/V2-OM_Denim_Back.jpg" download>下載</a></div></div><div class="card"><img loading="lazy" src="v2-denim/orig/V2_Denim_Headstock.jpg?v=1" alt=""><div class="cap"><span>V2_Denim_Headstock.jpg　1800×2330</span><a href="v2-denim/orig/V2_Denim_Headstock.jpg" download>下載</a></div></div><div class="card"><img loading="lazy" src="v2-denim/orig/V2_Denim_OM_Close_Up.jpg?v=1" alt=""><div class="cap"><span>V2_Denim_OM_Close_Up.jpg　1800×2330</span><a href="v2-denim/orig/V2_Denim_OM_Close_Up.jpg" download>下載</a></div></div><div class="card"><img loading="lazy" src="v2-denim/orig/pexels-enric-cruz-lopez-7444977.jpg?v=1" alt=""><div class="cap"><span>pexels-enric-cruz-lopez-7444977.jpg　1800×2330</span><a href="v2-denim/orig/pexels-enric-cruz-lopez-7444977.jpg" download>下載</a></div></div><div class="card"><img loading="lazy" src="v2-denim/orig/denim_bg.jpg?v=1" alt=""><div class="cap"><span>denim_bg.jpg　1800×2330</span><a href="v2-denim/orig/denim_bg.jpg" download>下載</a></div></div><div class="card"><img loading="lazy" src="v2-denim/orig/denim_bg2.jpg?v=1" alt=""><div class="cap"><span>denim_bg2.jpg　1800×2330</span><a href="v2-denim/orig/denim_bg2.jpg" download>下載</a></div></div></div></section><section class="model" id="v3"><div class="mh"><div><h2>Veelah V3 系列</h2><p>奧文科背側，有玫瑰木味道的溫潤聲音</p></div>
-<div class="btns"><a class="dl" href="v3/Veelah_v3_orig.zip" download>下載原圖（7 張 zip）</a><a class="dl ghost" href="https://www.veelah.com.tw/product-page/v3-series" target="_blank" rel="noopener">官網頁面</a></div></div>
-
-<h3>型號＆上架狀態 <small>建議商品名稱可以直接複製；MOMO／PChome 是 11/19 核對現有賣場</small></h3>
-<div class="tw"><table class="st"><tr><th>型號</th><th>桶型說明</th><th>MOMO</th><th>PChome</th><th>建議商品名稱</th></tr><tr><td><b>D</b></td><td>D 桶（Dreadnought 大桶身，聲音最大、低頻飽滿）</td><td><span class="no">還沒上</span></td><td><span class="no">還沒上</span></td><td><span class="nm">Veelah V3-D 面單吉他 雲杉單板 奧文科背側 民謠木吉他</span> <button class="cp" data-t="Veelah V3-D 面單吉他 雲杉單板 奧文科背側 民謠木吉他">複製</button></td></tr><tr><td><b>OM</b></td><td>OM 桶（中型腰身，好抱、聲音平衡，指彈自彈自唱都適合）</td><td><span class="no">還沒上</span></td><td><span class="no">還沒上</span></td><td><span class="nm">Veelah V3-OM 面單吉他 雲杉單板 奧文科背側 民謠木吉他</span> <button class="cp" data-t="Veelah V3-OM 面單吉他 雲杉單板 奧文科背側 民謠木吉他">複製</button></td></tr><tr><td><b>OMCE</b></td><td>OM 桶缺角＋插電</td><td><span class="no">還沒上</span></td><td><span class="no">還沒上</span></td><td><span class="nm">Veelah V3-OMCE 面單吉他 雲杉單板 奧文科背側 民謠木吉他 插電款</span> <button class="cp" data-t="Veelah V3-OMCE 面單吉他 雲杉單板 奧文科背側 民謠木吉他 插電款">複製</button></td></tr><tr><td><b>FOLK</b></td><td>Folk 小桶</td><td><span class="no">還沒上</span></td><td><span class="no">還沒上</span></td><td><span class="nm">Veelah V3-FOLK 面單吉他 雲杉單板 奧文科背側 民謠木吉他</span> <button class="cp" data-t="Veelah V3-FOLK 面單吉他 雲杉單板 奧文科背側 民謠木吉他">複製</button></td></tr><tr><td><b>FE</b></td><td>Folk 小桶＋插電</td><td><span class="no">還沒上</span></td><td><span class="no">還沒上</span></td><td><span class="nm">Veelah V3-FE 面單吉他 雲杉單板 奧文科背側 民謠木吉他 插電款</span> <button class="cp" data-t="Veelah V3-FE 面單吉他 雲杉單板 奧文科背側 民謠木吉他 插電款">複製</button></td></tr><tr><td><b>GAC</b></td><td>GA 桶缺角</td><td><span class="ok">已上</span></td><td><span class="no">還沒上</span></td><td><span class="nm">Veelah V3-GAC 面單吉他 雲杉單板 奧文科背側 民謠木吉他</span> <button class="cp" data-t="Veelah V3-GAC 面單吉他 雲杉單板 奧文科背側 民謠木吉他">複製</button></td></tr><tr><td><b>OMB</b></td><td>OM 桶 黑色</td><td><span class="no">還沒上</span></td><td><span class="no">還沒上</span></td><td><span class="nm">Veelah V3-OMB 面單吉他 雲杉單板 奧文科背側 民謠木吉他</span> <button class="cp" data-t="Veelah V3-OMB 面單吉他 雲杉單板 奧文科背側 民謠木吉他">複製</button></td></tr><tr><td><b>PCE</b></td><td>Parlor 小桶缺角＋插電</td><td><span class="no">還沒上</span></td><td><span class="no">還沒上</span></td><td><span class="nm">Veelah V3-PCE 面單吉他 雲杉單板 奧文科背側 民謠木吉他 插電款</span> <button class="cp" data-t="Veelah V3-PCE 面單吉他 雲杉單板 奧文科背側 民謠木吉他 插電款">複製</button></td></tr></table></div>
+附件：原廠豪華帆布琴袋</pre></div></div>
+<h3>西班牙風格圖 <small>1500×1500，每個場景一張遠景＋一張近景</small></h3><div class="mb"><div class="bh"><b>V2-DC</b><a class="dl sm" href="v2/spain/V2_DC_spain.zip" download>整包下載 6 張</a></div><div class="grid sp"><div class="card"><img loading="lazy" src="v2/spain/V2-DC_s12_wide.jpg?v=2" alt=""><div class="cap"><span>遠景</span><a href="v2/spain/V2-DC_s12_wide.jpg" download>下載</a></div></div><div class="card"><img loading="lazy" src="v2/spain/V2-DC_s12_close.jpg?v=2" alt=""><div class="cap"><span>近景</span><a href="v2/spain/V2-DC_s12_close.jpg" download>下載</a></div></div><div class="card"><img loading="lazy" src="v2/spain/V2-DC_s16_wide.jpg?v=2" alt=""><div class="cap"><span>遠景</span><a href="v2/spain/V2-DC_s16_wide.jpg" download>下載</a></div></div><div class="card"><img loading="lazy" src="v2/spain/V2-DC_s16_close.jpg?v=2" alt=""><div class="cap"><span>近景</span><a href="v2/spain/V2-DC_s16_close.jpg" download>下載</a></div></div><div class="card"><img loading="lazy" src="v2/spain/V2-DC_s3_wide.jpg?v=2" alt=""><div class="cap"><span>遠景</span><a href="v2/spain/V2-DC_s3_wide.jpg" download>下載</a></div></div><div class="card"><img loading="lazy" src="v2/spain/V2-DC_s3_close.jpg?v=2" alt=""><div class="cap"><span>近景</span><a href="v2/spain/V2-DC_s3_close.jpg" download>下載</a></div></div></div></div>
+<details class="en"><summary>官網原圖（3 張，白底）</summary><div class="grid orig"><div class="card"><img loading="lazy" src="v2/orig/V2-GAC.jpg?v=2" alt=""><div class="cap"><span>V2-GAC.jpg</span><a href="v2/orig/V2-GAC.jpg" download>下載</a></div></div><div class="card"><img loading="lazy" src="v2/orig/V2-D.jpg?v=2" alt=""><div class="cap"><span>V2-D.jpg</span><a href="v2/orig/V2-D.jpg" download>下載</a></div></div><div class="card"><img loading="lazy" src="v2/orig/V2-OM.jpg?v=2" alt=""><div class="cap"><span>V2-OM.jpg</span><a href="v2/orig/V2-OM.jpg" download>下載</a></div></div></div></details></section><section class="model" id="v3"><div class="mh"><div><h2>Veelah V3 系列</h2><p>奧文科背側，有玫瑰木味道的溫潤聲音</p></div>
+<div class="btns"><a class="dl ghost" href="https://www.veelah.com.tw/product-page/v3-series" target="_blank" rel="noopener">官網頁面</a></div></div>
+<h3>廠商有貨型號＆上架狀態</h3>
+<div class="tw"><table class="st"><tr><th>型號</th><th>說明</th><th>MOMO</th><th>PChome</th><th>建議商品名稱</th></tr><tr><td><b>DC</b></td><td>D 桶缺角</td><td><span class="no">還沒上</span></td><td><span class="no">還沒上</span></td><td><span class="nm">Veelah V3-DC 面單吉他 雲杉單板 奧文科背側 D桶缺角 民謠木吉他</span> <button class="cp" data-t="Veelah V3-DC 面單吉他 雲杉單板 奧文科背側 D桶缺角 民謠木吉他">複製</button><div class="wn">官網沒有照片；圖用泰國 CT Music 的 V3-DCE（插電款）照片，音孔花紋可能是舊版，上架前跟實品對一下</div></td></tr><tr><td><b>GAC</b></td><td>GA 桶缺角</td><td><span class="ok">已上</span></td><td><span class="no">還沒上</span></td><td><span class="nm">Veelah V3-GAC 面單吉他 雲杉單板 奧文科背側 GA桶缺角 民謠木吉他</span> <button class="cp" data-t="Veelah V3-GAC 面單吉他 雲杉單板 奧文科背側 GA桶缺角 民謠木吉他">複製</button></td></tr></table></div>
 <div class="two"><div class="box"><div class="bh"><b>商品特色</b><button class="cp" data-t="・V3 的招牌是奧文科拼接音孔花紋，跟背側同一種木頭，整體很協調
 ・奧文科的聲音很像玫瑰木：低音紮實、高音甜，回應快、泛音溫暖
 ・雲杉單板面板，消光塗裝，手感滑順
@@ -335,8 +196,7 @@ This guitar isn&#x27;t just an instrument—it&#x27;s a statement. Whether on st
 弦鈕：霧面鍍鉻封閉式 14:1
 出廠琴弦：Elixir Nanoweb 包膜弦
 拾音器（插電款）：Fishman Presys II
-附件：依賣場搭配
-桶型：D / OM / OMCE / FOLK / FE / GAC / OMB / PCE">複製</button></div><pre>面板：雲杉單板
+附件：依賣場搭配">複製</button></div><pre>面板：雲杉單板
 背板：奧文科（Ovangkol）
 側板：奧文科（Ovangkol）
 音孔花紋：奧文科（Ovangkol）
@@ -351,78 +211,12 @@ This guitar isn&#x27;t just an instrument—it&#x27;s a statement. Whether on st
 弦鈕：霧面鍍鉻封閉式 14:1
 出廠琴弦：Elixir Nanoweb 包膜弦
 拾音器（插電款）：Fishman Presys II
-附件：依賣場搭配
-桶型：D / OM / OMCE / FOLK / FE / GAC / OMB / PCE</pre></div></div>
-<details class="en"><summary>官網英文原文</summary><pre>REFINED ELEGANCE
- 
-The centerpiece of the V3 is its stunning ovankol split rosette. The rosette is paired with ovankol back and sides, a gorgeous wood with a tone reminiscent of rosewood. The smooth satin finish and onboard Fishman preamp yields both a satisfying tactile and playing experience. 
-Pick any of our body styles and you will find this instrument has it all...solid lows, sweet trebels, zippy response and warm overtones.</pre></details>
-<h3 id="v3-style">西班牙風格圖 <small>製作中，先做樣本給杰哥確認方向</small></h3><div class="grid" data-style="v3"></div>
-<h3>官網原圖 <small>白底，大部分 850×1100</small></h3><div class="grid orig"><div class="card"><img loading="lazy" src="v3/orig/V3-OM-1.jpg?v=1" alt=""><div class="cap"><span>V3-OM-1.jpg　850×1100</span><a href="v3/orig/V3-OM-1.jpg" download>下載</a></div></div><div class="card"><img loading="lazy" src="v3/orig/V3-OMCE.jpg?v=1" alt=""><div class="cap"><span>V3-OMCE.jpg　850×1100</span><a href="v3/orig/V3-OMCE.jpg" download>下載</a></div></div><div class="card"><img loading="lazy" src="v3/orig/V3-D.jpg?v=1" alt=""><div class="cap"><span>V3-D.jpg　850×1100</span><a href="v3/orig/V3-D.jpg" download>下載</a></div></div><div class="card"><img loading="lazy" src="v3/orig/V3-FE.jpg?v=1" alt=""><div class="cap"><span>V3-FE.jpg　850×1100</span><a href="v3/orig/V3-FE.jpg" download>下載</a></div></div><div class="card"><img loading="lazy" src="v3/orig/V3-GAC_front.jpg?v=1" alt=""><div class="cap"><span>V3-GAC_front.jpg　850×1100</span><a href="v3/orig/V3-GAC_front.jpg" download>下載</a></div></div><div class="card"><img loading="lazy" src="v3/orig/V3-OM-BLK.jpg?v=1" alt=""><div class="cap"><span>V3-OM-BLK.jpg　850×1100</span><a href="v3/orig/V3-OM-BLK.jpg" download>下載</a></div></div><div class="card"><img loading="lazy" src="v3/orig/V3-OMC-BLK.jpg?v=1" alt=""><div class="cap"><span>V3-OMC-BLK.jpg　850×1100</span><a href="v3/orig/V3-OMC-BLK.jpg" download>下載</a></div></div></div></section><section class="model" id="v4"><div class="mh"><div><h2>Veelah V4 系列（玫瑰木＋手臂斜角）</h2><p>2025 新款：玫瑰木背側＋桃花心木手臂斜角</p></div>
-<div class="btns"><a class="dl" href="v4/Veelah_v4_orig.zip" download>下載原圖（8 張 zip）</a><a class="dl ghost" href="https://www.veelah.com.tw/product-page/v4-series" target="_blank" rel="noopener">官網頁面</a></div></div>
-
-<h3>型號＆上架狀態 <small>建議商品名稱可以直接複製；MOMO／PChome 是 11/19 核對現有賣場</small></h3>
-<div class="tw"><table class="st"><tr><th>型號</th><th>桶型說明</th><th>MOMO</th><th>PChome</th><th>建議商品名稱</th></tr><tr><td><b>OM</b></td><td>OM 桶（中型腰身，好抱、聲音平衡，指彈自彈自唱都適合）</td><td><span class="no">還沒上</span></td><td><span class="no">還沒上</span></td><td><span class="nm">Veelah V4-OM 面單吉他 雲杉單板 玫瑰木背側 民謠木吉他</span> <button class="cp" data-t="Veelah V4-OM 面單吉他 雲杉單板 玫瑰木背側 民謠木吉他">複製</button></td></tr><tr><td><b>GAC</b></td><td>GA 桶缺角</td><td><span class="no">還沒上</span></td><td><span class="no">還沒上</span></td><td><span class="nm">Veelah V4-GAC 面單吉他 雲杉單板 玫瑰木背側 民謠木吉他</span> <button class="cp" data-t="Veelah V4-GAC 面單吉他 雲杉單板 玫瑰木背側 民謠木吉他">複製</button></td></tr></table></div>
-<div class="two"><div class="box"><div class="bh"><b>商品特色</b><button class="cp" data-t="・琴身右上有桃花心木手臂斜角（armrest），手臂放上去不會壓到邊角，久彈也舒服
-・雲杉單板面板＋玫瑰木背側，聲音明亮清楚、低頻有深度
-・原木色、黑色兩種顏色，霧面塗裝
-・珍珠貝＋桃花心木音孔花紋、桃花心木滾邊
-・玫瑰木指板與琴橋、牛骨上下弦枕、Elixir 包膜弦出廠">複製</button></div><pre>・琴身右上有桃花心木手臂斜角（armrest），手臂放上去不會壓到邊角，久彈也舒服
-・雲杉單板面板＋玫瑰木背側，聲音明亮清楚、低頻有深度
-・原木色、黑色兩種顏色，霧面塗裝
-・珍珠貝＋桃花心木音孔花紋、桃花心木滾邊
-・玫瑰木指板與琴橋、牛骨上下弦枕、Elixir 包膜弦出廠</pre></div>
-<div class="box"><div class="bh"><b>規格表</b><button class="cp" data-t="面板：雲杉單板（原木色／黑色）
-背板：玫瑰木
-側板：玫瑰木
-音孔花紋：珍珠貝＋桃花心木
-琴頸：桃花心木
-指板：玫瑰木
-琴橋：玫瑰木
-滾邊：桃花心木
-弦長：649 mm
-上弦枕寬：43 mm
-塗裝：原木色或黑色
-上／下弦枕：牛骨
-弦鈕：18:1（古銅色）
-出廠琴弦：Elixir Nanoweb 包膜弦
-拾音器（插電款）：依型號（有插電款）
-附件：依賣場搭配
-桶型：OM / GAC">複製</button></div><pre>面板：雲杉單板（原木色／黑色）
-背板：玫瑰木
-側板：玫瑰木
-音孔花紋：珍珠貝＋桃花心木
-琴頸：桃花心木
-指板：玫瑰木
-琴橋：玫瑰木
-滾邊：桃花心木
-弦長：649 mm
-上弦枕寬：43 mm
-塗裝：原木色或黑色
-上／下弦枕：牛骨
-弦鈕：18:1（古銅色）
-出廠琴弦：Elixir Nanoweb 包膜弦
-拾音器（插電款）：依型號（有插電款）
-附件：依賣場搭配
-桶型：OM / GAC</pre></div></div>
-<details class="en"><summary>官網英文原文</summary><pre>V4 Rosewood Armrest Series
- 
-Introducing the 2025 Veelah Acoustic Guitar
-Elevate your music in 2025 with Veelah’s newest acoustic guitar, a masterpiece of craftsmanship and innovation. Designed for discerning musicians, this guitar combines premium materials and exceptional playability with timeless elegance.
-At its heart is a solid spruce top, available in natural or classic black, delivering bright, articulate tones with a touch of warmth. The rosewood back and sides enhance its sound with a rich, resonant depth, while the body is adorned with mahogany binding for a touch of understated sophistication.
- 
-Ergonomics meet artistry with the unique mahogany armrest, offering both comfort and style. The mother-of-pearl rosette adds a hint of luxury, perfectly complementing the sleek smooth matte finish that feels as good as it looks.
- 
-Paired with Elixir strings, this guitar offers superior tone and longevity. The rosewood fingerboard and bridge provide a seamless playing experience, making this instrument as durable as it is stunning.
- 
-Whether you&#x27;re performing on stage, recording in the studio, or crafting songs at home, the 2025 Veelah Acoustic Guitar is designed to inspire and enhance every note.
-Available now in black or natural finishes.</pre></details>
-<h3 id="v4-style">西班牙風格圖 <small>製作中，先做樣本給杰哥確認方向</small></h3><div class="grid" data-style="v4"></div>
-<h3>官網原圖 <small>白底，大部分 850×1100</small></h3><div class="grid orig"><div class="card"><img loading="lazy" src="v4/orig/V4-OM_front.jpg?v=1" alt=""><div class="cap"><span>V4-OM_front.jpg　1800×2330</span><a href="v4/orig/V4-OM_front.jpg" download>下載</a></div></div><div class="card"><img loading="lazy" src="v4/orig/V4-OM-BK.jpg?v=1" alt=""><div class="cap"><span>V4-OM-BK.jpg　1800×2330</span><a href="v4/orig/V4-OM-BK.jpg" download>下載</a></div></div><div class="card"><img loading="lazy" src="v4/orig/V4-GAC-NAT.jpg?v=1" alt=""><div class="cap"><span>V4-GAC-NAT.jpg　1800×2330</span><a href="v4/orig/V4-GAC-NAT.jpg" download>下載</a></div></div><div class="card"><img loading="lazy" src="v4/orig/V4-GAC-BK.jpg?v=1" alt=""><div class="cap"><span>V4-GAC-BK.jpg　1800×2330</span><a href="v4/orig/V4-GAC-BK.jpg" download>下載</a></div></div><div class="card"><img loading="lazy" src="v4/orig/V4_series.jpg?v=1" alt=""><div class="cap"><span>V4_series.jpg　1800×2330</span><a href="v4/orig/V4_series.jpg" download>下載</a></div></div><div class="card"><img loading="lazy" src="v4/orig/V4_Back.jpg?v=1" alt=""><div class="cap"><span>V4_Back.jpg　1800×2330</span><a href="v4/orig/V4_Back.jpg" download>下載</a></div></div><div class="card"><img loading="lazy" src="v4/orig/V4_Headstock.jpg?v=1" alt=""><div class="cap"><span>V4_Headstock.jpg　1800×2330</span><a href="v4/orig/V4_Headstock.jpg" download>下載</a></div></div><div class="card"><img loading="lazy" src="v4/orig/armrest.jpg?v=1" alt=""><div class="cap"><span>armrest.jpg　1800×2330</span><a href="v4/orig/armrest.jpg" download>下載</a></div></div></div></section><section class="model" id="v5"><div class="mh"><div><h2>Veelah V5 系列</h2><p>經典雲杉＋玫瑰木組合，舞台也能用</p></div>
-<div class="btns"><a class="dl" href="v5/Veelah_v5_orig.zip" download>下載原圖（5 張 zip）</a><a class="dl ghost" href="https://www.veelah.com.tw/product-page/v5-series" target="_blank" rel="noopener">官網頁面</a></div></div>
-
-<h3>型號＆上架狀態 <small>建議商品名稱可以直接複製；MOMO／PChome 是 11/19 核對現有賣場</small></h3>
-<div class="tw"><table class="st"><tr><th>型號</th><th>桶型說明</th><th>MOMO</th><th>PChome</th><th>建議商品名稱</th></tr><tr><td><b>D</b></td><td>D 桶（Dreadnought 大桶身，聲音最大、低頻飽滿）</td><td><span class="no">還沒上</span></td><td><span class="no">還沒上</span></td><td><span class="nm">Veelah V5-D 面單吉他 雲杉單板 玫瑰木背側 民謠木吉他</span> <button class="cp" data-t="Veelah V5-D 面單吉他 雲杉單板 玫瑰木背側 民謠木吉他">複製</button></td></tr><tr><td><b>OM</b></td><td>OM 桶（中型腰身，好抱、聲音平衡，指彈自彈自唱都適合）</td><td><span class="no">還沒上</span></td><td><span class="no">還沒上</span></td><td><span class="nm">Veelah V5-OM 面單吉他 雲杉單板 玫瑰木背側 民謠木吉他</span> <button class="cp" data-t="Veelah V5-OM 面單吉他 雲杉單板 玫瑰木背側 民謠木吉他">複製</button></td></tr><tr><td><b>GACE</b></td><td>GA 桶缺角＋插電</td><td><span class="no">還沒上</span></td><td><span class="no">還沒上</span></td><td><span class="nm">Veelah V5-GACE 面單吉他 雲杉單板 玫瑰木背側 民謠木吉他 插電款</span> <button class="cp" data-t="Veelah V5-GACE 面單吉他 雲杉單板 玫瑰木背側 民謠木吉他 插電款">複製</button></td></tr><tr><td><b>DCE</b></td><td>D 桶缺角＋插電</td><td><span class="no">還沒上</span></td><td><span class="no">還沒上</span></td><td><span class="nm">Veelah V5-DCE 面單吉他 雲杉單板 玫瑰木背側 民謠木吉他 插電款</span> <button class="cp" data-t="Veelah V5-DCE 面單吉他 雲杉單板 玫瑰木背側 民謠木吉他 插電款">複製</button></td></tr><tr><td><b>GA</b></td><td>GA 桶（Grand Auditorium，介於 D 與 OM 之間）</td><td><span class="no">還沒上</span></td><td><span class="no">還沒上</span></td><td><span class="nm">Veelah V5-GA 面單吉他 雲杉單板 玫瑰木背側 民謠木吉他</span> <button class="cp" data-t="Veelah V5-GA 面單吉他 雲杉單板 玫瑰木背側 民謠木吉他">複製</button></td></tr></table></div>
+附件：依賣場搭配</pre></div></div>
+<h3>西班牙風格圖 <small>1500×1500，每個場景一張遠景＋一張近景</small></h3><div class="mb"><div class="bh"><b>V3-DC</b><a class="dl sm" href="v3/spain/V3_DC_spain.zip" download>整包下載 6 張</a></div><div class="grid sp"><div class="card"><img loading="lazy" src="v3/spain/V3-DC_s10_wide.jpg?v=2" alt=""><div class="cap"><span>遠景</span><a href="v3/spain/V3-DC_s10_wide.jpg" download>下載</a></div></div><div class="card"><img loading="lazy" src="v3/spain/V3-DC_s10_close.jpg?v=2" alt=""><div class="cap"><span>近景</span><a href="v3/spain/V3-DC_s10_close.jpg" download>下載</a></div></div><div class="card"><img loading="lazy" src="v3/spain/V3-DC_s15_wide.jpg?v=2" alt=""><div class="cap"><span>遠景</span><a href="v3/spain/V3-DC_s15_wide.jpg" download>下載</a></div></div><div class="card"><img loading="lazy" src="v3/spain/V3-DC_s15_close.jpg?v=2" alt=""><div class="cap"><span>近景</span><a href="v3/spain/V3-DC_s15_close.jpg" download>下載</a></div></div><div class="card"><img loading="lazy" src="v3/spain/V3-DC_s5_wide.jpg?v=2" alt=""><div class="cap"><span>遠景</span><a href="v3/spain/V3-DC_s5_wide.jpg" download>下載</a></div></div><div class="card"><img loading="lazy" src="v3/spain/V3-DC_s5_close.jpg?v=2" alt=""><div class="cap"><span>近景</span><a href="v3/spain/V3-DC_s5_close.jpg" download>下載</a></div></div></div></div><div class="mb"><div class="bh"><b>V3-GAC</b><a class="dl sm" href="v3/spain/V3_GAC_spain.zip" download>整包下載 6 張</a></div><div class="grid sp"><div class="card"><img loading="lazy" src="v3/spain/V3-GAC_s10_wide.jpg?v=2" alt=""><div class="cap"><span>遠景</span><a href="v3/spain/V3-GAC_s10_wide.jpg" download>下載</a></div></div><div class="card"><img loading="lazy" src="v3/spain/V3-GAC_s10_close.jpg?v=2" alt=""><div class="cap"><span>近景</span><a href="v3/spain/V3-GAC_s10_close.jpg" download>下載</a></div></div><div class="card"><img loading="lazy" src="v3/spain/V3-GAC_s15_wide.jpg?v=2" alt=""><div class="cap"><span>遠景</span><a href="v3/spain/V3-GAC_s15_wide.jpg" download>下載</a></div></div><div class="card"><img loading="lazy" src="v3/spain/V3-GAC_s15_close.jpg?v=2" alt=""><div class="cap"><span>近景</span><a href="v3/spain/V3-GAC_s15_close.jpg" download>下載</a></div></div><div class="card"><img loading="lazy" src="v3/spain/V3-GAC_s5_wide.jpg?v=2" alt=""><div class="cap"><span>遠景</span><a href="v3/spain/V3-GAC_s5_wide.jpg" download>下載</a></div></div><div class="card"><img loading="lazy" src="v3/spain/V3-GAC_s5_close.jpg?v=2" alt=""><div class="cap"><span>近景</span><a href="v3/spain/V3-GAC_s5_close.jpg" download>下載</a></div></div></div></div><div class="mb"><div class="bh"><b>V3-OM（樣本）</b><a class="dl sm" href="v3/spain/V3_OM_spain.zip" download>整包下載 6 張</a></div><div class="grid sp"><div class="card"><img loading="lazy" src="v3/spain/V3-OM_s1_wide.jpg?v=2" alt=""><div class="cap"><span>遠景</span><a href="v3/spain/V3-OM_s1_wide.jpg" download>下載</a></div></div><div class="card"><img loading="lazy" src="v3/spain/V3-OM_s1_close.jpg?v=2" alt=""><div class="cap"><span>近景</span><a href="v3/spain/V3-OM_s1_close.jpg" download>下載</a></div></div><div class="card"><img loading="lazy" src="v3/spain/V3-OM_s2_wide.jpg?v=2" alt=""><div class="cap"><span>遠景</span><a href="v3/spain/V3-OM_s2_wide.jpg" download>下載</a></div></div><div class="card"><img loading="lazy" src="v3/spain/V3-OM_s2_close.jpg?v=2" alt=""><div class="cap"><span>近景</span><a href="v3/spain/V3-OM_s2_close.jpg" download>下載</a></div></div><div class="card"><img loading="lazy" src="v3/spain/V3-OM_s3_wide.jpg?v=2" alt=""><div class="cap"><span>遠景</span><a href="v3/spain/V3-OM_s3_wide.jpg" download>下載</a></div></div><div class="card"><img loading="lazy" src="v3/spain/V3-OM_s3_close.jpg?v=2" alt=""><div class="cap"><span>近景</span><a href="v3/spain/V3-OM_s3_close.jpg" download>下載</a></div></div></div></div>
+<details class="en"><summary>官網原圖（7 張，白底）</summary><div class="grid orig"><div class="card"><img loading="lazy" src="v3/orig/V3-OM-1.jpg?v=2" alt=""><div class="cap"><span>V3-OM-1.jpg</span><a href="v3/orig/V3-OM-1.jpg" download>下載</a></div></div><div class="card"><img loading="lazy" src="v3/orig/V3-OMCE.jpg?v=2" alt=""><div class="cap"><span>V3-OMCE.jpg</span><a href="v3/orig/V3-OMCE.jpg" download>下載</a></div></div><div class="card"><img loading="lazy" src="v3/orig/V3-D.jpg?v=2" alt=""><div class="cap"><span>V3-D.jpg</span><a href="v3/orig/V3-D.jpg" download>下載</a></div></div><div class="card"><img loading="lazy" src="v3/orig/V3-FE.jpg?v=2" alt=""><div class="cap"><span>V3-FE.jpg</span><a href="v3/orig/V3-FE.jpg" download>下載</a></div></div><div class="card"><img loading="lazy" src="v3/orig/V3-GAC_front.jpg?v=2" alt=""><div class="cap"><span>V3-GAC_front.jpg</span><a href="v3/orig/V3-GAC_front.jpg" download>下載</a></div></div><div class="card"><img loading="lazy" src="v3/orig/V3-OM-BLK.jpg?v=2" alt=""><div class="cap"><span>V3-OM-BLK.jpg</span><a href="v3/orig/V3-OM-BLK.jpg" download>下載</a></div></div><div class="card"><img loading="lazy" src="v3/orig/V3-OMC-BLK.jpg?v=2" alt=""><div class="cap"><span>V3-OMC-BLK.jpg</span><a href="v3/orig/V3-OMC-BLK.jpg" download>下載</a></div></div></div></details></section><section class="model" id="v5"><div class="mh"><div><h2>Veelah V5 系列</h2><p>經典雲杉＋玫瑰木組合，舞台也能用</p></div>
+<div class="btns"><a class="dl ghost" href="https://www.veelah.com.tw/product-page/v5-series" target="_blank" rel="noopener">官網頁面</a></div></div>
+<h3>廠商有貨型號＆上架狀態</h3>
+<div class="tw"><table class="st"><tr><th>型號</th><th>說明</th><th>MOMO</th><th>PChome</th><th>建議商品名稱</th></tr><tr><td><b>D</b></td><td>D 桶（Dreadnought 大桶身，聲音最大、低頻飽滿）</td><td><span class="no">還沒上</span></td><td><span class="no">還沒上</span></td><td><span class="nm">Veelah V5-D 面單吉他 雲杉單板 玫瑰木背側 D桶 民謠木吉他</span> <button class="cp" data-t="Veelah V5-D 面單吉他 雲杉單板 玫瑰木背側 D桶 民謠木吉他">複製</button></td></tr><tr><td><b>GAC</b></td><td>GA 桶缺角</td><td><span class="no">還沒上</span></td><td><span class="no">還沒上</span></td><td><span class="nm">Veelah V5-GAC 面單吉他 雲杉單板 玫瑰木背側 GA桶缺角 民謠木吉他</span> <button class="cp" data-t="Veelah V5-GAC 面單吉他 雲杉單板 玫瑰木背側 GA桶缺角 民謠木吉他">複製</button><div class="wn">官網只有插電款 GACE 的照片，先共用；GACE 琴身側邊有前級面板，上架前看實品</div></td></tr><tr><td><b>GACE</b></td><td>GA 桶缺角＋插電</td><td><span class="no">還沒上</span></td><td><span class="no">還沒上</span></td><td><span class="nm">Veelah V5-GACE 面單吉他 雲杉單板 玫瑰木背側 GA桶缺角 插電款 Fishman Presys Blend</span> <button class="cp" data-t="Veelah V5-GACE 面單吉他 雲杉單板 玫瑰木背側 GA桶缺角 插電款 Fishman Presys Blend">複製</button></td></tr></table></div>
 <div class="two"><div class="box"><div class="bh"><b>商品特色</b><button class="cp" data-t="・最經典的木頭組合：雲杉單板面板＋玫瑰木背側，聲音飽滿有層次
 ・Koa 音孔花紋外圈再包玫瑰木，桃花心木滾邊，低調耐看
 ・黑檀木指板與琴橋，按弦手感滑順
@@ -447,8 +241,7 @@ Available now in black or natural finishes.</pre></details>
 弦鈕：霧金封閉式 14:1
 出廠琴弦：Elixir Nanoweb 包膜弦
 拾音器（插電款）：Fishman Presys Blend
-附件：依賣場搭配
-桶型：D / OM / GACE / DCE / GA">複製</button></div><pre>面板：雲杉單板
+附件：依賣場搭配">複製</button></div><pre>面板：雲杉單板
 背板：玫瑰木
 側板：玫瑰木
 音孔花紋：夏威夷相思木＋玫瑰木
@@ -463,30 +256,25 @@ Available now in black or natural finishes.</pre></details>
 弦鈕：霧金封閉式 14:1
 出廠琴弦：Elixir Nanoweb 包膜弦
 拾音器（插電款）：Fishman Presys Blend
-附件：依賣場搭配
-桶型：D / OM / GACE / DCE / GA</pre></div></div>
-<details class="en"><summary>官網英文原文</summary><pre>The CLASSIC 
- 
-The traditional combination of a solid spruce top with Rosewood back and sides is taken up a notch by the handsome koa rosette banded in rosewood. A simple mahogany binding puts the finishing touch on this classic beauty. The versatile V5 series is available with electronic systems for onstage performances.</pre></details>
-<h3 id="v5-style">西班牙風格圖 <small>製作中，先做樣本給杰哥確認方向</small></h3><div class="grid" data-style="v5"></div>
-<h3>官網原圖 <small>白底，大部分 850×1100</small></h3><div class="grid orig"><div class="card"><img loading="lazy" src="v5/orig/V5-D.jpg?v=1" alt=""><div class="cap"><span>V5-D.jpg　850×1100</span><a href="v5/orig/V5-D.jpg" download>下載</a></div></div><div class="card"><img loading="lazy" src="v5/orig/V5-GACE.jpg?v=1" alt=""><div class="cap"><span>V5-GACE.jpg　850×1100</span><a href="v5/orig/V5-GACE.jpg" download>下載</a></div></div><div class="card"><img loading="lazy" src="v5/orig/D5-DCE.jpg?v=1" alt=""><div class="cap"><span>D5-DCE.jpg　850×1100</span><a href="v5/orig/D5-DCE.jpg" download>下載</a></div></div><div class="card"><img loading="lazy" src="v5/orig/V5-Detail_2.jpg?v=1" alt=""><div class="cap"><span>V5-Detail_2.jpg　850×1100</span><a href="v5/orig/V5-Detail_2.jpg" download>下載</a></div></div><div class="card"><img loading="lazy" src="v5/orig/V5-DETAIL_1.jpg?v=1" alt=""><div class="cap"><span>V5-DETAIL_1.jpg　850×1100</span><a href="v5/orig/V5-DETAIL_1.jpg" download>下載</a></div></div></div></section><section class="model" id="v7"><div class="mh"><div><h2>Veelah V7 系列（全單板）</h2><p>全單板，Veelah 的旗艦系列</p></div>
-<div class="btns"><a class="dl" href="v7/Veelah_v7_orig.zip" download>下載原圖（11 張 zip）</a><a class="dl ghost" href="https://www.veelah.com.tw/product-page/v7-series" target="_blank" rel="noopener">官網頁面</a></div></div>
-
-<h3>型號＆上架狀態 <small>建議商品名稱可以直接複製；MOMO／PChome 是 11/19 核對現有賣場</small></h3>
-<div class="tw"><table class="st"><tr><th>型號</th><th>桶型說明</th><th>MOMO</th><th>PChome</th><th>建議商品名稱</th></tr><tr><td><b>OM</b></td><td>OM 桶（中型腰身，好抱、聲音平衡，指彈自彈自唱都適合）</td><td><span class="no">還沒上</span></td><td><span class="no">還沒上</span></td><td><span class="nm">Veelah V7-OM 全單吉他 西加雲杉單板 桃花心木單板背側 民謠木吉他</span> <button class="cp" data-t="Veelah V7-OM 全單吉他 西加雲杉單板 桃花心木單板背側 民謠木吉他">複製</button></td></tr><tr><td><b>GAC</b></td><td>GA 桶缺角</td><td><span class="no">還沒上</span></td><td><span class="no">還沒上</span></td><td><span class="nm">Veelah V7-GAC 全單吉他 西加雲杉單板 桃花心木單板背側 民謠木吉他</span> <button class="cp" data-t="Veelah V7-GAC 全單吉他 西加雲杉單板 桃花心木單板背側 民謠木吉他">複製</button></td></tr><tr><td><b>D</b></td><td>D 桶（Dreadnought 大桶身，聲音最大、低頻飽滿）</td><td><span class="no">還沒上</span></td><td><span class="no">還沒上</span></td><td><span class="nm">Veelah V7-D 全單吉他 西加雲杉單板 桃花心木單板背側 民謠木吉他</span> <button class="cp" data-t="Veelah V7-D 全單吉他 西加雲杉單板 桃花心木單板背側 民謠木吉他">複製</button></td></tr><tr><td><b>BAS-DC</b></td><td>D 桶缺角（BAS 版）</td><td><span class="no">還沒上</span></td><td><span class="no">還沒上</span></td><td><span class="nm">Veelah V7-BAS-DC 全單吉他 西加雲杉單板 桃花心木單板背側 民謠木吉他</span> <button class="cp" data-t="Veelah V7-BAS-DC 全單吉他 西加雲杉單板 桃花心木單板背側 民謠木吉他">複製</button></td></tr><tr><td><b>BAS-GACE</b></td><td>GA 桶缺角＋插電（BAS 版）</td><td><span class="no">還沒上</span></td><td><span class="no">還沒上</span></td><td><span class="nm">Veelah V7-BAS-GACE 全單吉他 西加雲杉單板 桃花心木單板背側 民謠木吉他 插電款</span> <button class="cp" data-t="Veelah V7-BAS-GACE 全單吉他 西加雲杉單板 桃花心木單板背側 民謠木吉他 插電款">複製</button></td></tr><tr><td><b>BAS-OM</b></td><td>OM 桶（BAS 版）</td><td><span class="no">還沒上</span></td><td><span class="no">還沒上</span></td><td><span class="nm">Veelah V7-BAS-OM 全單吉他 西加雲杉單板 桃花心木單板背側 民謠木吉他</span> <button class="cp" data-t="Veelah V7-BAS-OM 全單吉他 西加雲杉單板 桃花心木單板背側 民謠木吉他">複製</button></td></tr><tr><td><b>SAS-GACE</b></td><td>GA 桶缺角＋插電（SAS 版）</td><td><span class="no">還沒上</span></td><td><span class="no">還沒上</span></td><td><span class="nm">Veelah V7-SAS-GACE 全單吉他 西加雲杉單板 桃花心木單板背側 民謠木吉他 插電款</span> <button class="cp" data-t="Veelah V7-SAS-GACE 全單吉他 西加雲杉單板 桃花心木單板背側 民謠木吉他 插電款">複製</button></td></tr><tr><td><b>SAS-OM</b></td><td>OM 桶（SAS 版）</td><td><span class="no">還沒上</span></td><td><span class="no">還沒上</span></td><td><span class="nm">Veelah V7-SAS-OM 全單吉他 西加雲杉單板 桃花心木單板背側 民謠木吉他</span> <button class="cp" data-t="Veelah V7-SAS-OM 全單吉他 西加雲杉單板 桃花心木單板背側 民謠木吉他">複製</button></td></tr><tr><td><b>SM-DC</b></td><td>D 桶缺角（SM 版）</td><td><span class="no">還沒上</span></td><td><span class="no">還沒上</span></td><td><span class="nm">Veelah V7-SM-DC 全單吉他 西加雲杉單板 桃花心木單板背側 民謠木吉他</span> <button class="cp" data-t="Veelah V7-SM-DC 全單吉他 西加雲杉單板 桃花心木單板背側 民謠木吉他">複製</button></td></tr></table></div>
-<div class="two"><div class="box"><div class="bh"><b>商品特色</b><button class="cp" data-t="・面板、背板、側板全部都是單板，聲音最開、越彈越好聽
-・西加雲杉面板＋桃花心木單板背側，琴頸是一體成型桃花心木
-・螺旋斑紋楓木音孔花紋＋虎紋楓木滾邊，是 V7 一眼就認得的特色
-・Grover 金色 21:1 弦鈕、TUSQ 上下弦枕，琴身亮光／琴頸消光
-・搭載 L.R. Baggs 拾音系統，附原廠豪華硬盒">複製</button></div><pre>・面板、背板、側板全部都是單板，聲音最開、越彈越好聽
-・西加雲杉面板＋桃花心木單板背側，琴頸是一體成型桃花心木
-・螺旋斑紋楓木音孔花紋＋虎紋楓木滾邊，是 V7 一眼就認得的特色
-・Grover 金色 21:1 弦鈕、TUSQ 上下弦枕，琴身亮光／琴頸消光
+附件：依賣場搭配</pre></div></div>
+<h3>西班牙風格圖 <small>1500×1500，每個場景一張遠景＋一張近景</small></h3><div class="mb"><div class="bh"><b>V5-D</b><a class="dl sm" href="v5/spain/V5_D_spain.zip" download>整包下載 6 張</a></div><div class="grid sp"><div class="card"><img loading="lazy" src="v5/spain/V5-D_s1_wide.jpg?v=2" alt=""><div class="cap"><span>遠景</span><a href="v5/spain/V5-D_s1_wide.jpg" download>下載</a></div></div><div class="card"><img loading="lazy" src="v5/spain/V5-D_s1_close.jpg?v=2" alt=""><div class="cap"><span>近景</span><a href="v5/spain/V5-D_s1_close.jpg" download>下載</a></div></div><div class="card"><img loading="lazy" src="v5/spain/V5-D_s11_wide.jpg?v=2" alt=""><div class="cap"><span>遠景</span><a href="v5/spain/V5-D_s11_wide.jpg" download>下載</a></div></div><div class="card"><img loading="lazy" src="v5/spain/V5-D_s11_close.jpg?v=2" alt=""><div class="cap"><span>近景</span><a href="v5/spain/V5-D_s11_close.jpg" download>下載</a></div></div><div class="card"><img loading="lazy" src="v5/spain/V5-D_s6_wide.jpg?v=2" alt=""><div class="cap"><span>遠景</span><a href="v5/spain/V5-D_s6_wide.jpg" download>下載</a></div></div><div class="card"><img loading="lazy" src="v5/spain/V5-D_s6_close.jpg?v=2" alt=""><div class="cap"><span>近景</span><a href="v5/spain/V5-D_s6_close.jpg" download>下載</a></div></div></div></div><div class="mb"><div class="bh"><b>V5-GAC</b><a class="dl sm" href="v5/spain/V5_GAC_spain.zip" download>整包下載 6 張</a></div><div class="grid sp"><div class="card"><img loading="lazy" src="v5/spain/V5-GAC_s14_wide.jpg?v=2" alt=""><div class="cap"><span>遠景</span><a href="v5/spain/V5-GAC_s14_wide.jpg" download>下載</a></div></div><div class="card"><img loading="lazy" src="v5/spain/V5-GAC_s14_close.jpg?v=2" alt=""><div class="cap"><span>近景</span><a href="v5/spain/V5-GAC_s14_close.jpg" download>下載</a></div></div><div class="card"><img loading="lazy" src="v5/spain/V5-GAC_s2_wide.jpg?v=2" alt=""><div class="cap"><span>遠景</span><a href="v5/spain/V5-GAC_s2_wide.jpg" download>下載</a></div></div><div class="card"><img loading="lazy" src="v5/spain/V5-GAC_s2_close.jpg?v=2" alt=""><div class="cap"><span>近景</span><a href="v5/spain/V5-GAC_s2_close.jpg" download>下載</a></div></div><div class="card"><img loading="lazy" src="v5/spain/V5-GAC_s9_wide.jpg?v=2" alt=""><div class="cap"><span>遠景</span><a href="v5/spain/V5-GAC_s9_wide.jpg" download>下載</a></div></div><div class="card"><img loading="lazy" src="v5/spain/V5-GAC_s9_close.jpg?v=2" alt=""><div class="cap"><span>近景</span><a href="v5/spain/V5-GAC_s9_close.jpg" download>下載</a></div></div></div></div><div class="mb"><div class="bh"><b>V5-GACE</b><a class="dl sm" href="v5/spain/V5_GACE_spain.zip" download>整包下載 6 張</a></div><div class="grid sp"><div class="card"><img loading="lazy" src="v5/spain/V5-GACE_s12_wide.jpg?v=2" alt=""><div class="cap"><span>遠景</span><a href="v5/spain/V5-GACE_s12_wide.jpg" download>下載</a></div></div><div class="card"><img loading="lazy" src="v5/spain/V5-GACE_s12_close.jpg?v=2" alt=""><div class="cap"><span>近景</span><a href="v5/spain/V5-GACE_s12_close.jpg" download>下載</a></div></div><div class="card"><img loading="lazy" src="v5/spain/V5-GACE_s16_wide.jpg?v=2" alt=""><div class="cap"><span>遠景</span><a href="v5/spain/V5-GACE_s16_wide.jpg" download>下載</a></div></div><div class="card"><img loading="lazy" src="v5/spain/V5-GACE_s16_close.jpg?v=2" alt=""><div class="cap"><span>近景</span><a href="v5/spain/V5-GACE_s16_close.jpg" download>下載</a></div></div><div class="card"><img loading="lazy" src="v5/spain/V5-GACE_s3_wide.jpg?v=2" alt=""><div class="cap"><span>遠景</span><a href="v5/spain/V5-GACE_s3_wide.jpg" download>下載</a></div></div><div class="card"><img loading="lazy" src="v5/spain/V5-GACE_s3_close.jpg?v=2" alt=""><div class="cap"><span>近景</span><a href="v5/spain/V5-GACE_s3_close.jpg" download>下載</a></div></div></div></div>
+<details class="en"><summary>官網原圖（5 張，白底）</summary><div class="grid orig"><div class="card"><img loading="lazy" src="v5/orig/V5-D.jpg?v=2" alt=""><div class="cap"><span>V5-D.jpg</span><a href="v5/orig/V5-D.jpg" download>下載</a></div></div><div class="card"><img loading="lazy" src="v5/orig/V5-GACE.jpg?v=2" alt=""><div class="cap"><span>V5-GACE.jpg</span><a href="v5/orig/V5-GACE.jpg" download>下載</a></div></div><div class="card"><img loading="lazy" src="v5/orig/D5-DCE.jpg?v=2" alt=""><div class="cap"><span>D5-DCE.jpg</span><a href="v5/orig/D5-DCE.jpg" download>下載</a></div></div><div class="card"><img loading="lazy" src="v5/orig/V5-Detail_2.jpg?v=2" alt=""><div class="cap"><span>V5-Detail_2.jpg</span><a href="v5/orig/V5-Detail_2.jpg" download>下載</a></div></div><div class="card"><img loading="lazy" src="v5/orig/V5-DETAIL_1.jpg?v=2" alt=""><div class="cap"><span>V5-DETAIL_1.jpg</span><a href="v5/orig/V5-DETAIL_1.jpg" download>下載</a></div></div></div></details></section><section class="model" id="v8"><div class="mh"><div><h2>Veelah V8 系列（全單板 玫瑰木）</h2><p>全單板＋玫瑰木，鮑魚貝音孔，Veelah 最高階</p></div>
+<div class="btns"><a class="dl ghost" href="https://www.veelah.com.tw/product-page/v8-series" target="_blank" rel="noopener">官網頁面</a></div></div>
+<h3>廠商有貨型號＆上架狀態</h3>
+<div class="tw"><table class="st"><tr><th>型號</th><th>說明</th><th>MOMO</th><th>PChome</th><th>建議商品名稱</th></tr><tr><td><b>D</b></td><td>D 桶（Dreadnought 大桶身，聲音最大、低頻飽滿）</td><td><span class="no">還沒上</span></td><td><span class="no">還沒上</span></td><td><span class="nm">Veelah V8-D 全單吉他 西加雲杉 玫瑰木單板背側 D桶 L.R.Baggs 附硬盒</span> <button class="cp" data-t="Veelah V8-D 全單吉他 西加雲杉 玫瑰木單板背側 D桶 L.R.Baggs 附硬盒">複製</button></td></tr><tr><td><b>GAC</b></td><td>GA 桶缺角</td><td><span class="no">還沒上</span></td><td><span class="no">還沒上</span></td><td><span class="nm">Veelah V8-GAC 全單吉他 西加雲杉 玫瑰木單板背側 GA桶缺角 L.R.Baggs 附硬盒</span> <button class="cp" data-t="Veelah V8-GAC 全單吉他 西加雲杉 玫瑰木單板背側 GA桶缺角 L.R.Baggs 附硬盒">複製</button></td></tr></table></div>
+<div class="two"><div class="box"><div class="bh"><b>商品特色</b><button class="cp" data-t="・面板、背板、側板全部單板：西加雲杉面板＋玫瑰木單板背側，聲音飽滿、層次多
+・鮑魚貝（Abalone）音孔花紋、虎紋楓木滾邊，指板上有珍珠貝 V8 鑲嵌
+・一體成型桃花心木琴頸、鐵木指板與琴橋
+・Veelah 訂製金色 18:1 弦鈕、TUSQ 上下弦枕，琴身亮光／琴頸消光
+・搭載 L.R. Baggs 拾音系統，附原廠豪華硬盒">複製</button></div><pre>・面板、背板、側板全部單板：西加雲杉面板＋玫瑰木單板背側，聲音飽滿、層次多
+・鮑魚貝（Abalone）音孔花紋、虎紋楓木滾邊，指板上有珍珠貝 V8 鑲嵌
+・一體成型桃花心木琴頸、鐵木指板與琴橋
+・Veelah 訂製金色 18:1 弦鈕、TUSQ 上下弦枕，琴身亮光／琴頸消光
 ・搭載 L.R. Baggs 拾音系統，附原廠豪華硬盒</pre></div>
 <div class="box"><div class="bh"><b>規格表</b><button class="cp" data-t="面板：西加雲杉單板
-背板：桃花心木單板
-側板：桃花心木單板
-音孔花紋：螺旋斑紋楓木
+背板：玫瑰木單板
+側板：玫瑰木單板
+音孔花紋：鮑魚貝
 琴頸：一體成型桃花心木
 指板：鐵木（Pau Ferro）
 琴橋：鐵木（Pau Ferro）
@@ -495,14 +283,13 @@ The traditional combination of a solid spruce top with Rosewood back and sides i
 上弦枕寬：43 mm
 塗裝：琴身亮光／琴頸消光
 上／下弦枕：TUSQ（Graph Tech）
-弦鈕：Grover 金色封閉式 21:1
+弦鈕：Veelah 訂製金色封閉式 18:1
 出廠琴弦：Elixir Nanoweb 包膜弦
 拾音器（插電款）：L.R. Baggs
-附件：原廠豪華硬盒
-桶型：OM / GAC / D / BAS-DC / BAS-GACE / BAS-OM / SAS-GACE / SAS-OM / SM-DC">複製</button></div><pre>面板：西加雲杉單板
-背板：桃花心木單板
-側板：桃花心木單板
-音孔花紋：螺旋斑紋楓木
+附件：原廠豪華硬盒">複製</button></div><pre>面板：西加雲杉單板
+背板：玫瑰木單板
+側板：玫瑰木單板
+音孔花紋：鮑魚貝
 琴頸：一體成型桃花心木
 指板：鐵木（Pau Ferro）
 琴橋：鐵木（Pau Ferro）
@@ -511,18 +298,102 @@ The traditional combination of a solid spruce top with Rosewood back and sides i
 上弦枕寬：43 mm
 塗裝：琴身亮光／琴頸消光
 上／下弦枕：TUSQ（Graph Tech）
-弦鈕：Grover 金色封閉式 21:1
+弦鈕：Veelah 訂製金色封閉式 18:1
 出廠琴弦：Elixir Nanoweb 包膜弦
 拾音器（插電款）：L.R. Baggs
-附件：原廠豪華硬盒
-桶型：OM / GAC / D / BAS-DC / BAS-GACE / BAS-OM / SAS-GACE / SAS-OM / SM-DC</pre></div></div>
-<details class="en"><summary>官網英文原文</summary><pre>CONTEMPORARY CHIC 
- 
-The V7 is crafted of all-solid materials with a spruce top and mahogany back and sides. The obvious star of this show is the brilliant spalted maple rosette rendered with contemporary artistry that is pure poetry in motion. 
- 
-This remarkable instrument features a gloss finish on the solid Mahogany back and sides and satin on the neck. In combination with the L.R.Baggs preamp, this guitar.... sound</pre></details>
-<h3 id="v7-style">西班牙風格圖 <small>製作中，先做樣本給杰哥確認方向</small></h3><div class="grid" data-style="v7"></div>
-<h3>官網原圖 <small>白底，大部分 850×1100</small></h3><div class="grid orig"><div class="card"><img loading="lazy" src="v7/orig/V7-SAS-OM_Front.jpg?v=1" alt=""><div class="cap"><span>V7-SAS-OM_Front.jpg　850×1100</span><a href="v7/orig/V7-SAS-OM_Front.jpg" download>下載</a></div></div><div class="card"><img loading="lazy" src="v7/orig/V7-SAS-OM_Front_v2.jpg?v=1" alt=""><div class="cap"><span>V7-SAS-OM_Front_v2.jpg　850×1100</span><a href="v7/orig/V7-SAS-OM_Front_v2.jpg" download>下載</a></div></div><div class="card"><img loading="lazy" src="v7/orig/V7-SAS-GACE_Front2.jpg?v=1" alt=""><div class="cap"><span>V7-SAS-GACE_Front2.jpg　850×1100</span><a href="v7/orig/V7-SAS-GACE_Front2.jpg" download>下載</a></div></div><div class="card"><img loading="lazy" src="v7/orig/V7-BAS-DC.jpg?v=1" alt=""><div class="cap"><span>V7-BAS-DC.jpg　850×1100</span><a href="v7/orig/V7-BAS-DC.jpg" download>下載</a></div></div><div class="card"><img loading="lazy" src="v7/orig/V7-BAS-OM_Front.jpg?v=1" alt=""><div class="cap"><span>V7-BAS-OM_Front.jpg　850×1100</span><a href="v7/orig/V7-BAS-OM_Front.jpg" download>下載</a></div></div><div class="card"><img loading="lazy" src="v7/orig/V7-BAS-GACE.jpg?v=1" alt=""><div class="cap"><span>V7-BAS-GACE.jpg　850×1100</span><a href="v7/orig/V7-BAS-GACE.jpg" download>下載</a></div></div><div class="card"><img loading="lazy" src="v7/orig/V7-SM-DC.jpg?v=1" alt=""><div class="cap"><span>V7-SM-DC.jpg　850×1100</span><a href="v7/orig/V7-SM-DC.jpg" download>下載</a></div></div><div class="card"><img loading="lazy" src="v7/orig/V7-BAS-GAC_Back.jpg?v=1" alt=""><div class="cap"><span>V7-BAS-GAC_Back.jpg　1800×2330</span><a href="v7/orig/V7-BAS-GAC_Back.jpg" download>下載</a></div></div><div class="card"><img loading="lazy" src="v7/orig/V7-BAS-DC_Back.jpg?v=1" alt=""><div class="cap"><span>V7-BAS-DC_Back.jpg　1800×2330</span><a href="v7/orig/V7-BAS-DC_Back.jpg" download>下載</a></div></div><div class="card"><img loading="lazy" src="v7/orig/V7-rosette.jpg?v=1" alt=""><div class="cap"><span>V7-rosette.jpg　1800×2330</span><a href="v7/orig/V7-rosette.jpg" download>下載</a></div></div><div class="card"><img loading="lazy" src="v7/orig/V7-headstock.jpg?v=1" alt=""><div class="cap"><span>V7-headstock.jpg　1800×2330</span><a href="v7/orig/V7-headstock.jpg" download>下載</a></div></div></div></section>
+附件：原廠豪華硬盒</pre></div></div>
+<h3>西班牙風格圖 <small>1500×1500，每個場景一張遠景＋一張近景</small></h3><div class="mb"><div class="bh"><b>V8-D</b><a class="dl sm" href="v8/spain/V8_D_spain.zip" download>整包下載 6 張</a></div><div class="grid sp"><div class="card"><img loading="lazy" src="v8/spain/V8-D_s10_wide.jpg?v=2" alt=""><div class="cap"><span>遠景</span><a href="v8/spain/V8-D_s10_wide.jpg" download>下載</a></div></div><div class="card"><img loading="lazy" src="v8/spain/V8-D_s10_close.jpg?v=2" alt=""><div class="cap"><span>近景</span><a href="v8/spain/V8-D_s10_close.jpg" download>下載</a></div></div><div class="card"><img loading="lazy" src="v8/spain/V8-D_s15_wide.jpg?v=2" alt=""><div class="cap"><span>遠景</span><a href="v8/spain/V8-D_s15_wide.jpg" download>下載</a></div></div><div class="card"><img loading="lazy" src="v8/spain/V8-D_s15_close.jpg?v=2" alt=""><div class="cap"><span>近景</span><a href="v8/spain/V8-D_s15_close.jpg" download>下載</a></div></div><div class="card"><img loading="lazy" src="v8/spain/V8-D_s5_wide.jpg?v=2" alt=""><div class="cap"><span>遠景</span><a href="v8/spain/V8-D_s5_wide.jpg" download>下載</a></div></div><div class="card"><img loading="lazy" src="v8/spain/V8-D_s5_close.jpg?v=2" alt=""><div class="cap"><span>近景</span><a href="v8/spain/V8-D_s5_close.jpg" download>下載</a></div></div></div></div><div class="mb"><div class="bh"><b>V8-GAC</b><a class="dl sm" href="v8/spain/V8_GAC_spain.zip" download>整包下載 6 張</a></div><div class="grid sp"><div class="card"><img loading="lazy" src="v8/spain/V8-GAC_s13_wide.jpg?v=2" alt=""><div class="cap"><span>遠景</span><a href="v8/spain/V8-GAC_s13_wide.jpg" download>下載</a></div></div><div class="card"><img loading="lazy" src="v8/spain/V8-GAC_s13_close.jpg?v=2" alt=""><div class="cap"><span>近景</span><a href="v8/spain/V8-GAC_s13_close.jpg" download>下載</a></div></div><div class="card"><img loading="lazy" src="v8/spain/V8-GAC_s7_wide.jpg?v=2" alt=""><div class="cap"><span>遠景</span><a href="v8/spain/V8-GAC_s7_wide.jpg" download>下載</a></div></div><div class="card"><img loading="lazy" src="v8/spain/V8-GAC_s7_close.jpg?v=2" alt=""><div class="cap"><span>近景</span><a href="v8/spain/V8-GAC_s7_close.jpg" download>下載</a></div></div><div class="card"><img loading="lazy" src="v8/spain/V8-GAC_s8_wide.jpg?v=2" alt=""><div class="cap"><span>遠景</span><a href="v8/spain/V8-GAC_s8_wide.jpg" download>下載</a></div></div><div class="card"><img loading="lazy" src="v8/spain/V8-GAC_s8_close.jpg?v=2" alt=""><div class="cap"><span>近景</span><a href="v8/spain/V8-GAC_s8_close.jpg" download>下載</a></div></div></div></div>
+<details class="en"><summary>官網原圖（10 張，白底）</summary><div class="grid orig"><div class="card"><img loading="lazy" src="v8/orig/V8-GAC.jpg?v=2" alt=""><div class="cap"><span>V8-GAC.jpg</span><a href="v8/orig/V8-GAC.jpg" download>下載</a></div></div><div class="card"><img loading="lazy" src="v8/orig/V8-D.jpg?v=2" alt=""><div class="cap"><span>V8-D.jpg</span><a href="v8/orig/V8-D.jpg" download>下載</a></div></div><div class="card"><img loading="lazy" src="v8/orig/V8-OM.jpg?v=2" alt=""><div class="cap"><span>V8-OM.jpg</span><a href="v8/orig/V8-OM.jpg" download>下載</a></div></div><div class="card"><img loading="lazy" src="v8/orig/V8-DCE.jpg?v=2" alt=""><div class="cap"><span>V8-DCE.jpg</span><a href="v8/orig/V8-DCE.jpg" download>下載</a></div></div><div class="card"><img loading="lazy" src="v8/orig/V8-D_Back.jpg?v=2" alt=""><div class="cap"><span>V8-D_Back.jpg</span><a href="v8/orig/V8-D_Back.jpg" download>下載</a></div></div><div class="card"><img loading="lazy" src="v8/orig/V8-GACE_Back.jpg?v=2" alt=""><div class="cap"><span>V8-GACE_Back.jpg</span><a href="v8/orig/V8-GACE_Back.jpg" download>下載</a></div></div><div class="card"><img loading="lazy" src="v8/orig/V8_front.jpg?v=2" alt=""><div class="cap"><span>V8_front.jpg</span><a href="v8/orig/V8_front.jpg" download>下載</a></div></div><div class="card"><img loading="lazy" src="v8/orig/V8-DETAIL_copy.jpg?v=2" alt=""><div class="cap"><span>V8-DETAIL_copy.jpg</span><a href="v8/orig/V8-DETAIL_copy.jpg" download>下載</a></div></div><div class="card"><img loading="lazy" src="v8/orig/V8_Headstock.jpg?v=2" alt=""><div class="cap"><span>V8_Headstock.jpg</span><a href="v8/orig/V8_Headstock.jpg" download>下載</a></div></div><div class="card"><img loading="lazy" src="v8/orig/V8-GAC_back.jpg?v=2" alt=""><div class="cap"><span>V8-GAC_back.jpg</span><a href="v8/orig/V8-GAC_back.jpg" download>下載</a></div></div></div></details></section><section class="model" id="togo-s"><div class="mh"><div><h2>Veelah TOGO S 旅行吉他（雲杉面）</h2><p>3/4 尺寸旅行吉他，說走就走</p></div>
+<div class="btns"><a class="dl ghost" href="https://www.veelah.com.tw/product-page/togo-series-s" target="_blank" rel="noopener">官網頁面</a></div></div>
+<h3>廠商有貨型號＆上架狀態</h3>
+<div class="tw"><table class="st"><tr><th>型號</th><th>說明</th><th>MOMO</th><th>PChome</th><th>建議商品名稱</th></tr><tr><td><b>TOGO-SE</b></td><td>TOGO S 雲杉面＋插電</td><td><span class="no">還沒上</span></td><td><span class="no">還沒上</span></td><td><span class="nm">Veelah TOGO-SE 旅行吉他 雲杉單板 3/4尺寸 插電款 附原廠厚琴袋</span> <button class="cp" data-t="Veelah TOGO-SE 旅行吉他 雲杉單板 3/4尺寸 插電款 附原廠厚琴袋">複製</button><div class="wn">官網 TOGO S 照片沒標哪張是插電款，先用正面照</div></td></tr></table></div>
+<div class="two"><div class="box"><div class="bh"><b>商品特色</b><button class="cp" data-t="・TOGO 就是「to go」：3/4 尺寸小琴身，出門旅行、露營隨手帶，在家當入門琴也很好彈
+・雲杉單板面板＋桃花心木拱形背板，小琴身也有飽滿共鳴
+・音孔是雷射雕刻的旅人護身符圖騰
+・弦長 571mm，手小、初學、小朋友都好按
+・插電款搭載 Veelah A1 或 Fishman Presys I，附原廠厚琴袋">複製</button></div><pre>・TOGO 就是「to go」：3/4 尺寸小琴身，出門旅行、露營隨手帶，在家當入門琴也很好彈
+・雲杉單板面板＋桃花心木拱形背板，小琴身也有飽滿共鳴
+・音孔是雷射雕刻的旅人護身符圖騰
+・弦長 571mm，手小、初學、小朋友都好按
+・插電款搭載 Veelah A1 或 Fishman Presys I，附原廠厚琴袋</pre></div>
+<div class="box"><div class="bh"><b>規格表</b><button class="cp" data-t="面板：雲杉單板
+背板：桃花心木（拱形背）
+側板：桃花心木
+音孔花紋：雷射雕刻圖騰
+琴頸：桃花心木
+指板：鐵木（Pau Ferro）
+琴橋：鐵木（Pau Ferro）
+滾邊：無
+弦長：571 mm
+上弦枕寬：43 mm
+塗裝：開孔消光
+上／下弦枕：Graph Tech NuBone
+弦鈕：鍍鉻封閉式 14:1
+出廠琴弦：D&#x27;Addario
+拾音器（插電款）：Veelah A1 或 Fishman Presys I
+附件：原廠厚琴袋">複製</button></div><pre>面板：雲杉單板
+背板：桃花心木（拱形背）
+側板：桃花心木
+音孔花紋：雷射雕刻圖騰
+琴頸：桃花心木
+指板：鐵木（Pau Ferro）
+琴橋：鐵木（Pau Ferro）
+滾邊：無
+弦長：571 mm
+上弦枕寬：43 mm
+塗裝：開孔消光
+上／下弦枕：Graph Tech NuBone
+弦鈕：鍍鉻封閉式 14:1
+出廠琴弦：D&#x27;Addario
+拾音器（插電款）：Veelah A1 或 Fishman Presys I
+附件：原廠厚琴袋</pre></div></div>
+<h3>西班牙風格圖 <small>1500×1500，每個場景一張遠景＋一張近景</small></h3><div class="mb"><div class="bh"><b>TOGO-SE</b><a class="dl sm" href="togo-s/spain/TOGO_SE_spain.zip" download>整包下載 6 張</a></div><div class="grid sp"><div class="card"><img loading="lazy" src="togo-s/spain/TOGO-SE_s1_wide.jpg?v=2" alt=""><div class="cap"><span>遠景</span><a href="togo-s/spain/TOGO-SE_s1_wide.jpg" download>下載</a></div></div><div class="card"><img loading="lazy" src="togo-s/spain/TOGO-SE_s1_close.jpg?v=2" alt=""><div class="cap"><span>近景</span><a href="togo-s/spain/TOGO-SE_s1_close.jpg" download>下載</a></div></div><div class="card"><img loading="lazy" src="togo-s/spain/TOGO-SE_s11_wide.jpg?v=2" alt=""><div class="cap"><span>遠景</span><a href="togo-s/spain/TOGO-SE_s11_wide.jpg" download>下載</a></div></div><div class="card"><img loading="lazy" src="togo-s/spain/TOGO-SE_s11_close.jpg?v=2" alt=""><div class="cap"><span>近景</span><a href="togo-s/spain/TOGO-SE_s11_close.jpg" download>下載</a></div></div><div class="card"><img loading="lazy" src="togo-s/spain/TOGO-SE_s6_wide.jpg?v=2" alt=""><div class="cap"><span>遠景</span><a href="togo-s/spain/TOGO-SE_s6_wide.jpg" download>下載</a></div></div><div class="card"><img loading="lazy" src="togo-s/spain/TOGO-SE_s6_close.jpg?v=2" alt=""><div class="cap"><span>近景</span><a href="togo-s/spain/TOGO-SE_s6_close.jpg" download>下載</a></div></div></div></div>
+<details class="en"><summary>官網原圖（3 張，白底）</summary><div class="grid orig"><div class="card"><img loading="lazy" src="togo-s/orig/TOGO-SF.jpg?v=2" alt=""><div class="cap"><span>TOGO-SF.jpg</span><a href="togo-s/orig/TOGO-SF.jpg" download>下載</a></div></div><div class="card"><img loading="lazy" src="togo-s/orig/Togo-S-1.jpg?v=2" alt=""><div class="cap"><span>Togo-S-1.jpg</span><a href="togo-s/orig/Togo-S-1.jpg" download>下載</a></div></div><div class="card"><img loading="lazy" src="togo-s/orig/TOGO_S_Front.jpg?v=2" alt=""><div class="cap"><span>TOGO_S_Front.jpg</span><a href="togo-s/orig/TOGO_S_Front.jpg" download>下載</a></div></div></div></details></section><section class="model" id="togo-m"><div class="mh"><div><h2>Veelah TOGO M 旅行吉他（桃花心木面）</h2><p>3/4 尺寸旅行吉他，桃花心木溫暖音色</p></div>
+<div class="btns"><a class="dl ghost" href="https://www.veelah.com.tw/product-page/togo-series-m" target="_blank" rel="noopener">官網頁面</a></div></div>
+<h3>廠商有貨型號＆上架狀態</h3>
+<div class="tw"><table class="st"><tr><th>型號</th><th>說明</th><th>MOMO</th><th>PChome</th><th>建議商品名稱</th></tr><tr><td><b>TOGO-ME</b></td><td>TOGO M 桃花心木面＋插電</td><td><span class="no">還沒上</span></td><td><span class="no">還沒上</span></td><td><span class="nm">Veelah TOGO-ME 旅行吉他 桃花心木單板 3/4尺寸 插電款 附原廠厚琴袋</span> <button class="cp" data-t="Veelah TOGO-ME 旅行吉他 桃花心木單板 3/4尺寸 插電款 附原廠厚琴袋">複製</button></td></tr></table></div>
+<div class="two"><div class="box"><div class="bh"><b>商品特色</b><button class="cp" data-t="・TOGO 就是「to go」：3/4 尺寸小琴身，出門旅行、露營隨手帶，在家當入門琴也很好彈
+・桃花心木單板面板＋桃花心木拱形背板，聲音溫暖、中頻厚
+・音孔是雷射雕刻的旅人護身符圖騰
+・弦長 571mm，手小、初學、小朋友都好按
+・插電款搭載 Veelah A1 或 Fishman Presys I，附原廠厚琴袋">複製</button></div><pre>・TOGO 就是「to go」：3/4 尺寸小琴身，出門旅行、露營隨手帶，在家當入門琴也很好彈
+・桃花心木單板面板＋桃花心木拱形背板，聲音溫暖、中頻厚
+・音孔是雷射雕刻的旅人護身符圖騰
+・弦長 571mm，手小、初學、小朋友都好按
+・插電款搭載 Veelah A1 或 Fishman Presys I，附原廠厚琴袋</pre></div>
+<div class="box"><div class="bh"><b>規格表</b><button class="cp" data-t="面板：桃花心木單板
+背板：桃花心木（拱形背）
+側板：桃花心木
+音孔花紋：雷射雕刻圖騰
+琴頸：桃花心木
+指板：鐵木（Pau Ferro）
+琴橋：鐵木（Pau Ferro）
+滾邊：無
+弦長：571 mm
+上弦枕寬：43 mm
+塗裝：開孔消光
+上／下弦枕：Graph Tech NuBone
+弦鈕：鍍鉻封閉式 14:1
+出廠琴弦：D&#x27;Addario
+拾音器（插電款）：Veelah A1 或 Fishman Presys I
+附件：原廠厚琴袋">複製</button></div><pre>面板：桃花心木單板
+背板：桃花心木（拱形背）
+側板：桃花心木
+音孔花紋：雷射雕刻圖騰
+琴頸：桃花心木
+指板：鐵木（Pau Ferro）
+琴橋：鐵木（Pau Ferro）
+滾邊：無
+弦長：571 mm
+上弦枕寬：43 mm
+塗裝：開孔消光
+上／下弦枕：Graph Tech NuBone
+弦鈕：鍍鉻封閉式 14:1
+出廠琴弦：D&#x27;Addario
+拾音器（插電款）：Veelah A1 或 Fishman Presys I
+附件：原廠厚琴袋</pre></div></div>
+<h3>西班牙風格圖 <small>1500×1500，每個場景一張遠景＋一張近景</small></h3><div class="mb"><div class="bh"><b>TOGO-ME</b><a class="dl sm" href="togo-m/spain/TOGO_ME_spain.zip" download>整包下載 6 張</a></div><div class="grid sp"><div class="card"><img loading="lazy" src="togo-m/spain/TOGO-ME_s14_wide.jpg?v=2" alt=""><div class="cap"><span>遠景</span><a href="togo-m/spain/TOGO-ME_s14_wide.jpg" download>下載</a></div></div><div class="card"><img loading="lazy" src="togo-m/spain/TOGO-ME_s14_close.jpg?v=2" alt=""><div class="cap"><span>近景</span><a href="togo-m/spain/TOGO-ME_s14_close.jpg" download>下載</a></div></div><div class="card"><img loading="lazy" src="togo-m/spain/TOGO-ME_s2_wide.jpg?v=2" alt=""><div class="cap"><span>遠景</span><a href="togo-m/spain/TOGO-ME_s2_wide.jpg" download>下載</a></div></div><div class="card"><img loading="lazy" src="togo-m/spain/TOGO-ME_s2_close.jpg?v=2" alt=""><div class="cap"><span>近景</span><a href="togo-m/spain/TOGO-ME_s2_close.jpg" download>下載</a></div></div><div class="card"><img loading="lazy" src="togo-m/spain/TOGO-ME_s9_wide.jpg?v=2" alt=""><div class="cap"><span>遠景</span><a href="togo-m/spain/TOGO-ME_s9_wide.jpg" download>下載</a></div></div><div class="card"><img loading="lazy" src="togo-m/spain/TOGO-ME_s9_close.jpg?v=2" alt=""><div class="cap"><span>近景</span><a href="togo-m/spain/TOGO-ME_s9_close.jpg" download>下載</a></div></div></div></div>
+<details class="en"><summary>官網原圖（3 張，白底）</summary><div class="grid orig"><div class="card"><img loading="lazy" src="togo-m/orig/TOGO_M_front.jpg?v=2" alt=""><div class="cap"><span>TOGO_M_front.jpg</span><a href="togo-m/orig/TOGO_M_front.jpg" download>下載</a></div></div><div class="card"><img loading="lazy" src="togo-m/orig/TOGO-MF.jpg?v=2" alt=""><div class="cap"><span>TOGO-MF.jpg</span><a href="togo-m/orig/TOGO-MF.jpg" download>下載</a></div></div><div class="card"><img loading="lazy" src="togo-m/orig/Togo-ME.jpg?v=2" alt=""><div class="cap"><span>Togo-ME.jpg</span><a href="togo-m/orig/Togo-ME.jpg" download>下載</a></div></div></div></details></section>
 <footer>內部使用｜2026-11-19 整理</footer><div id="lb"><img alt=""></div>
 <script>
 document.querySelectorAll('button.cp').forEach(b=>b.onclick=async()=>{try{await navigator.clipboard.writeText(b.dataset.t)}catch(e){const t=document.createElement('textarea');t.value=b.dataset.t;document.body.appendChild(t);t.select();document.execCommand('copy');t.remove()}b.textContent='已複製';b.classList.add('done');setTimeout(()=>{b.textContent='複製';b.classList.remove('done')},1500)});
