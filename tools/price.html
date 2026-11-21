@@ -1,0 +1,109 @@
+<!doctype html><html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="robots" content="noindex,nofollow"><title>改價核對</title>
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap">
+<style>
+#list{display:flex;flex-direction:column;gap:12px}body{margin:0}[hidden]{display:none!important}
+/* 一列一件商品的卡片；手機優先，每張卡上方是現況，下方是三個選項 */
+:root{--bg:#f6f2ec;--card:#fffdf9;--fg:#2b231b;--mute:#7d6e5f;--line:#e4d9cb;--accent:#a3522f;--accent-bg:#f6e3d8;--ok:#2f6b45;--ok-bg:#e2efe6;--warn-bg:#fbe4df;--info-bg:#e6edf6;
+--sans:"Noto Sans TC",system-ui,-apple-system,"PingFang TC","Microsoft JhengHei",sans-serif}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1d1915;--card:#27221c;--fg:#f1e9df;--mute:#b3a594;--line:#3d352c;--accent:#e08a62;--accent-bg:#43291c;--ok:#7cc496;--ok-bg:#1f3527;--warn-bg:#47261f;--info-bg:#1f2a38;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#1d1915;--card:#27221c;--fg:#f1e9df;--mute:#b3a594;--line:#3d352c;--accent:#e08a62;--accent-bg:#43291c;--ok:#7cc496;--ok-bg:#1f3527;--warn-bg:#47261f;--info-bg:#1f2a38;color-scheme:dark}
+body{background:var(--bg);color:var(--fg);font-family:var(--sans);font-size:15px;line-height:1.5}
+.wrap{max-width:720px;margin:0 auto;padding-block:20px 120px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));display:flex;flex-direction:column;gap:14px}
+h1{font-size:24px;margin:0;text-wrap:balance}
+.lead{color:var(--mute);margin:0}
+.quick{display:flex;gap:8px;flex-wrap:wrap}
+button{font:inherit;cursor:pointer}
+.qbtn{border:1px solid var(--line);background:var(--card);color:var(--fg);border-radius:999px;padding:6px 14px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px;display:flex;flex-direction:column;gap:10px}
+.card.big{border-left:5px solid var(--accent)}
+.head{display:flex;justify-content:space-between;align-items:baseline;gap:8px;flex-wrap:wrap}
+.model{font-weight:700;font-size:18px}
+.tag{font-size:12px;padding:2px 10px;border-radius:999px;background:var(--warn-bg)}
+.tag.info{background:var(--info-bg)}.tag.ok{background:var(--ok-bg);color:var(--ok)}
+.grid{display:grid;grid-template-columns:auto 1fr 1fr;gap:4px 12px;font-variant-numeric:tabular-nums}
+.grid .h{color:var(--mute);font-size:12px}
+.grid .lbl{color:var(--mute)}
+.sug{color:var(--accent);font-weight:700}
+.opts{display:flex;gap:6px;flex-wrap:wrap}
+.opts label{border:1px solid var(--line);border-radius:10px;padding:6px 12px;display:flex;gap:6px;align-items:center;cursor:pointer}
+.opts input{accent-color:var(--accent)}
+.opts label:has(input:checked){background:var(--accent-bg);border-color:var(--accent)}
+.custom{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.custom label{display:flex;flex-direction:column;font-size:12px;color:var(--mute);gap:2px}
+.custom input{font:inherit;font-size:17px;padding:8px 10px;border:1px solid var(--line);border-radius:8px;background:var(--bg);color:var(--fg);width:100%;box-sizing:border-box;font-variant-numeric:tabular-nums}
+.note{font-size:13px;color:var(--mute)}
+.bar{position:fixed;left:0;right:0;bottom:0;background:var(--card);border-top:1px solid var(--line);padding-block:12px calc(12px + env(safe-area-inset-bottom,0px));padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));display:flex;gap:12px;align-items:center;justify-content:center}
+.send{background:var(--accent);color:#fff;border:0;border-radius:12px;padding:12px 28px;font-weight:700;font-size:16px}
+.send:disabled{opacity:.5}
+#status{font-size:13px;color:var(--mute)}
+button:focus-visible,input:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+</style>
+<div class="wrap">
+  <h1>審核區 13 件改價勾選</h1>
+  <p class="lead">每件選「照建議」、「不動」或「自己填」。自己填可以直接打電商價、官網價。按最下面「送出給 Amy」才會存，Amy 收到後照這張改。</p>
+  <div class="quick"><button class="qbtn" id="allSug">全部照建議</button><button class="qbtn" id="allKeep">全部不動</button></div>
+  <div id="list"></div>
+</div>
+<div class="bar"><button class="send" id="send">送出給 Amy</button><span id="status"></span></div>
+<script>
+let ROWS=[];
+const fmt=n=>n==null||n===""?"":Number(n).toLocaleString("en-US");
+const state={};
+function card(r){
+  const s=state[r.m], id=r.m.replace(/[^A-Za-z0-9]/g,"");
+  const tagCls=r.lvl==="差很多"?"tag":(r.lvl==="疑代理控價"?"tag info":(r.lvl==="小調整"?"tag":"tag ok"));
+  return `<div class="card ${r.lvl==="差很多"?"big":""}">
+  <div class="head"><span class="model">${r.m}</span><span class="${tagCls}">${r.lvl}</span></div>
+  <div class="grid"><span class="h"></span><span class="h">現在</span><span class="h">建議</span>
+   <span class="lbl">別家</span><span>${r.comp}</span><span></span>
+   <span class="lbl">電商</span><span>${r.ecNow||fmt(r.ecNowN)}</span><span class="${r.ecSug!==r.ecNowN?"sug":""}">${fmt(r.ecSug)}</span>
+   <span class="lbl">官網</span><span>${fmt(r.webNow)}</span><span class="${r.webSug!==r.webNow?"sug":""}">${fmt(r.webSug)}</span></div>
+  <div class="opts">
+   <label><input type="radio" name="c_${id}" id="sug_${id}" value="sug" ${s.choice==="sug"?"checked":""}>照建議</label>
+   <label><input type="radio" name="c_${id}" id="keep_${id}" value="keep" ${s.choice==="keep"?"checked":""}>不動</label>
+   <label><input type="radio" name="c_${id}" id="cus_${id}" value="custom" ${s.choice==="custom"?"checked":""}>自己填</label></div>
+  <div class="custom" ${s.choice==="custom"?"":"hidden"} id="box_${id}">
+   <label for="ec_${id}">電商價<input inputmode="numeric" id="ec_${id}" value="${s.ec??""}"></label>
+   <label for="web_${id}">官網價<input inputmode="numeric" id="web_${id}" value="${s.web??""}"></label></div>
+ </div>`}
+function render(){
+  const L=document.getElementById("list"); L.innerHTML=ROWS.map(card).join("");
+  ROWS.forEach(r=>{const id=r.m.replace(/[^A-Za-z0-9]/g,"");
+    L.querySelectorAll(`input[name=c_${id}]`).forEach(x=>x.addEventListener("change",e=>{state[r.m].choice=e.target.value;document.getElementById("box_"+id).hidden=e.target.value!=="custom"}));
+    ["ec","web"].forEach(k=>document.getElementById(`${k}_${id}`).addEventListener("input",e=>{state[r.m][k]=e.target.value.replace(/[^0-9]/g,"")}));
+  });
+}
+document.getElementById("allSug").onclick=()=>{ROWS.forEach(r=>state[r.m].choice="sug");render()};
+document.getElementById("allKeep").onclick=()=>{ROWS.forEach(r=>state[r.m].choice="keep");render()};
+const st=document.getElementById("status"), btn=document.getElementById("send");
+
+const K="AIzaSyBFIekk-vqXwYlnwBSRqJ6LtIq1vgInOaI",DB="https://order-system-dddca-default-rtdb.firebaseio.com";
+const RID=new URLSearchParams(location.search).get("r")||"";
+let tok=null;
+async function auth(){const r=await fetch("https://identitytoolkit.googleapis.com/v1/accounts:signUp?key="+K,{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({returnSecureToken:true})});tok=(await r.json()).idToken}
+(async()=>{
+  if(!/^r[0-9a-f]{12}$/.test(RID)){st.textContent="連結不完整";btn.disabled=true;return}
+  try{await auth();const d=await (await fetch(`${DB}/priceReview/${RID}.json?auth=${tok}`)).json();
+    if(!d||!d.rows){st.textContent="找不到資料";btn.disabled=true;return}
+    ROWS=d.rows; if(d.title)document.querySelector("h1").textContent=d.title;
+    ROWS.forEach(r=>state[r.m]={choice:(r.ecSug!==r.ecNowN||r.webSug!==r.webNow)?"sug":"keep",ec:r.ecSug,web:r.webSug});
+    if(d.decision&&d.decision.rows){d.decision.rows.forEach(x=>{if(state[x.model])state[x.model]={choice:x.choice,ec:x.ec,web:x.web}});st.textContent="已載入上次送出的選擇（"+(d.decision.submittedAt||"").slice(5,16).replace("T"," ")+"）"}
+    render();
+  }catch(e){st.textContent="讀取失敗，請重新整理";btn.disabled=true}
+})();
+btn.onclick=async()=>{
+  const rows=ROWS.map(r=>{const s=state[r.m];let ec,web;
+    if(s.choice==="sug"){ec=r.ecSug;web=r.webSug}else if(s.choice==="keep"){ec=r.ecNowN;web=r.webNow}else{ec=Number(s.ec)||null;web=Number(s.web)||null}
+    return{model:r.m,choice:s.choice,ec,web}});
+  const bad=rows.find(x=>x.choice==="custom"&&(!x.ec||!x.web));
+  if(bad){st.textContent=bad.model+" 選了自己填，電商價和官網價都要填";return}
+  btn.disabled=true;st.textContent="送出中…";
+  try{if(!tok)await auth();
+    const r=await fetch(`${DB}/priceReview/${RID}/decision.json?auth=${tok}`,{method:"PUT",body:JSON.stringify({rows,submittedAt:new Date(Date.now()+8*3600e3).toISOString()})});
+    if(!r.ok)throw 0; st.textContent="已送出，Amy 收到會照這張改";}
+  catch(e){st.textContent="送出失敗，請再按一次，或直接在 Discord 回 Amy"}
+  btn.disabled=false;
+};
+</script>
+</html>
