@@ -1,0 +1,125 @@
+<!doctype html><html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex"><title>讓 AI 推薦我們家</title>
+<style>
+:root{--bg:#f6f4f1;--card:#fff;--ink:#222;--mut:#6f6760;--ok:#1f7a4a;--okbg:#eaf6ef;--red:#c0392b;--redbg:#fbeceb;--line:#e6e1da;--hi:#fff6d8}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,"PingFang TC","Microsoft JhengHei",sans-serif;line-height:1.6;font-size:15px}
+header{background:#2b2420;color:#fff;padding:22px 16px 16px}header h1{margin:0;font-size:22px}header p{margin:6px 0 0;color:#d8cfc6;font-size:14px}
+nav{position:sticky;top:0;z-index:5;background:#fff;border-bottom:1px solid var(--line);display:flex;gap:8px;overflow-x:auto;padding:10px 16px}
+nav a{flex:none;font-size:13px;color:var(--ink);text-decoration:none;background:var(--bg);border-radius:20px;padding:6px 12px}
+main{max-width:760px;margin:0 auto;padding:8px 16px 60px}
+h2{font-size:19px;margin:28px 0 8px}
+.card{background:var(--card);border-radius:12px;padding:14px;margin-bottom:12px;box-shadow:0 1px 2px rgba(0,0,0,.05)}
+.card h3{margin:0 0 6px;font-size:16px;display:flex;gap:8px;align-items:center}
+.tag{font-size:12px;font-weight:700;border-radius:10px;padding:2px 8px;color:#fff;background:var(--red);flex:none}.tag.g{background:var(--ok)}.tag.m{background:#8a7a6a}
+.t{font-size:12px;color:var(--mut);margin-left:auto;font-weight:400}
+ol,ul{margin:6px 0 0;padding-left:22px}li{margin:3px 0}
+a{color:#1f5fa8}
+.why{background:var(--redbg);border-radius:12px;padding:14px}
+.done li{list-style:none;margin-left:-22px}.done li:before{content:"● ";color:var(--ok);font-weight:700}
+.copy{position:relative;background:var(--hi);border:1px dashed #d9c27a;border-radius:10px;padding:12px 12px 12px;margin-top:8px;white-space:pre-wrap;font-size:14px}
+.copy button{position:absolute;top:6px;right:6px;border:0;background:#2b2420;color:#fff;border-radius:8px;padding:4px 10px;font-size:12px}
+.mut{color:var(--mut);font-size:13px}
+table{width:100%;border-collapse:collapse;font-size:14px}td{border-top:1px solid var(--line);padding:6px 4px;vertical-align:top}td:first-child{color:var(--mut);width:84px}
+</style></head><body>
+<header><h1>讓 AI 推薦店家時出現我們家</h1><p>2026-11-22 夜間整理・照順序做，最上面的效果最大</p></header>
+<nav><a href="#why">原因</a><a href="#done">我已做好</a><a href="#todo">要你做的</a><a href="#data">複製用資料</a></nav>
+<main>
+
+<h2 id="why">為什麼 AI 沒推薦我們</h2>
+<div class="why">
+<ul>
+<li><b>「推薦店家」清單主要抓 Google 地圖：</b>看三件事：離問的人多近、評論幾則、幾顆星。你截圖的第一名宛伶是 4.9 星、1,600 則評論。</li>
+<li><b>AI 會參考「別人寫的」推薦：</b>Yahoo 業配新聞、痞客邦部落客文、PRO360「附近10大樂器行」、PTT、Dcard。這些地方目前<b>全部沒有我們</b>。</li>
+<li><b>講到我們的幾乎只有自己的官網：</b>AI 會把它當店家自我宣傳打折扣。官網本身的資料已經很齊，問題不在官網。</li>
+<li><b>資料不一致會扣分：</b>小雞上工徵才頁的電話寫 0958252108，搜尋引擎還留著舊營業時間「週二至週日 11:00–20:00、週一公休」。</li>
+</ul>
+</div>
+
+<h2 id="done">我已經做好的</h2>
+<div class="card done"><ul>
+<li>維修單：完工只通知客人來拿琴，客人拿走才收回吊牌（已上線）</li>
+<li>評論邀請程式：完工通知、訂單完成通知、客人保養紀錄頁可以附「到 Google 寫評論」（<b>已上線但關著</b>，你說「開評論」就開；不另外多發 LINE，不吃額度）</li>
+<li>櫃台用 Google 評論 QR 小卡（A6）：<a href="review_card.pdf">下載 PDF 列印</a>、<a href="review_card.png">看圖</a></li>
+<li>兩篇在地文章草稿：〈新手買吉他推薦店家〉〈新手買烏克麗麗推薦店家〉，標題直接對準 AI 被問的那句話（<b>還沒上線，等你看</b>）</li>
+<li>〈三峽樂器行〉舊文補上捷運三鶯線（等你看）</li>
+<li>給 AI 讀的說明檔 llms.txt 加「新手吉他、烏克麗麗店長推薦」段落（文章上線時一起上）</li>
+</ul></div>
+
+<h2 id="todo">要你做的（照順序）</h2>
+
+<div class="card"><h3><span class="tag">1</span>Google 商家後台檢查<span class="t">約 15 分鐘・效果最大</span></h3>
+<p class="mut">手機搜尋「YA! 玩音樂」→ 點自己的商家資料 → 編輯商家資料；或開 <a href="https://business.google.com/">business.google.com</a></p>
+<ol>
+<li><b>營業時間</b>改成每天 13:30–22:00，週一也開。舊資料還在流傳，這項最急。</li>
+<li><b>電話</b> 0986-831-208、<b>網站</b> https://yamusic.com.tw/</li>
+<li><b>類別：</b>主類別「樂器行」，再加「吉他店」「鋼琴店」「樂器維修服務」。</li>
+<li><b>商家說明</b>貼下面「複製用資料」那段。</li>
+<li><b>照片：</b>補 10 張以上：店面外觀、店內吉他牆、電鋼琴區、試彈角落、維修工作台。之後每週 1–2 張。</li>
+<li><b>評論全部回覆</b>，包含舊的。差評也客氣回，AI 會看店家有沒有在經營。</li>
+</ol></div>
+
+<div class="card"><h3><span class="tag">2</span>開始收評論<span class="t">每天做・評論數是排名主因</span></h3>
+<ol>
+<li>回我「<b>開評論</b>」，我就打開完工／訂單完成通知裡的評論連結。</li>
+<li>QR 小卡印出來放櫃台、維修交件處。</li>
+<li>結帳、交琴時跟<b>每一位</b>客人說一句「方便的話幫我們在 Google 留個評論」。</li>
+</ol>
+<p class="mut">注意 Google 規定：不能只找滿意的客人、不能用送東西或折扣換評論、不能自己或員工寫。被抓到會整批刪評論，甚至停權。</p></div>
+
+<div class="card"><h3><span class="tag">3</span>Bing 地圖<span class="t">約 10 分鐘・ChatGPT、Copilot 用 Bing 的資料</span></h3>
+<ol>
+<li>開 <a href="https://www.bingplaces.com/">bingplaces.com</a> → 用管 Google 商家的同一個 Google 帳號登入</li>
+<li>選「Import from Google Business Profile」，一鍵把 Google 的資料匯過去</li>
+</ol></div>
+
+<div class="card"><h3><span class="tag">4</span>Apple 地圖<span class="t">約 15 分鐘・iPhone、Siri 用</span></h3>
+<ol>
+<li>開 <a href="https://businessconnect.apple.com/">businessconnect.apple.com</a> → 用 Apple ID 登入 → 新增地點</li>
+<li>資料照下面「複製用資料」填；會用電話或文件驗證</li>
+</ol></div>
+
+<div class="card"><h3><span class="tag m">5</span>統一外部資料<span class="t">約 5 分鐘</span></h3>
+<ul>
+<li>小雞上工徵才頁：電話改成 0986-831-208（目前寫 0958252108）。<a href="https://www.chickpt.com.tw/company/yMa5Bk8X40JN">頁面 1</a>、<a href="https://www.chickpt.com.tw/company/r6b0DrE9x182">頁面 2</a></li>
+<li>有 Facebook 粉專或 Instagram 的話給我網址，我加到官網店家資料裡；沒有的話建議開一個，至少放地址、營業時間、照片。</li>
+</ul></div>
+
+<div class="card"><h3><span class="tag m">6</span>免費目錄登錄<span class="t">有空再做</span></h3>
+<ul>
+<li><a href="https://www.pro360.com.tw/">PRO360</a>：AI 常引用它的「三峽／土城附近10大樂器行」，目前兩頁都沒有我們。</li>
+<li><a href="https://www.iyp.com.tw/">台灣黃頁 iyp</a>：免費登錄店家。</li>
+</ul>
+<p class="mut">兩個都要用店家身分註冊，資料照下面填，三個平台寫法要完全一樣。</p></div>
+
+<div class="card"><h3><span class="tag m">7</span>讓別人寫我們<span class="t">慢慢累積・影響最久</span></h3>
+<ul>
+<li>合作老師、老學生：請他們在 Dcard、PTT 吉他板、部落格寫真實的買琴或維修心得（不能是我們寫好給他貼）。</li>
+<li>學校社團合作、教會 PA 承接：請對方在活動貼文標記店名和地址。</li>
+<li>Yahoo 新聞那篇宛伶推薦文其實是業配稿。要不要也做一篇，你再決定，我可以幫你寫稿。</li>
+</ul></div>
+
+<h2 id="data">複製用資料（三個平台寫法要一模一樣）</h2>
+<div class="card"><table>
+<tr><td>店名</td><td>YA! 玩音樂</td></tr>
+<tr><td>地址</td><td>新北市三峽區大德路 216 號（郵遞區號 237）</td></tr>
+<tr><td>電話</td><td>0986-831-208</td></tr>
+<tr><td>網站</td><td>https://yamusic.com.tw/</td></tr>
+<tr><td>營業時間</td><td>每天 13:30–22:00（週一也營業）</td></tr>
+<tr><td>主類別</td><td>樂器行</td></tr>
+<tr><td>次類別</td><td>吉他店、鋼琴店、樂器維修服務</td></tr>
+</table>
+<p style="margin:12px 0 0"><b>商家說明</b><span class="mut">（Google 上限 750 字，這段約 260 字）</span></p>
+<div class="copy" id="desc">YA! 玩音樂是新北三峽北大特區的樂器行，2020 年成立。門市有木吉他、古典吉他、電吉他、烏克麗麗、電鋼琴、電子鼓、音箱與效果器，主要品牌 Yamaha、Roland、aNueNue、Veelah、NUX，都可以現場試彈比較。新手第一把琴，我們會先問你想彈什麼、預算多少，再一起挑。店內提供吉他、烏克麗麗、貝斯換弦、調弦距、琴頸調整、拾音器與電路維修，也承接學校社團、教會的樂器採購與活動音響。電鋼琴雙北可預約到府安裝。捷運三鶯線三峽站步行約 15 分鐘，鶯歌、土城、樹林開車約 7–12 分鐘。每天 13:30–22:00 營業。<button onclick="navigator.clipboard.writeText(document.getElementById('desc').firstChild.textContent);this.textContent='已複製'">複製</button></div>
+<p style="margin:12px 0 0"><b>服務項目</b>（Google「服務」欄位）</p>
+<div class="copy" id="svc">吉他試彈選購
+古典吉他、烏克麗麗選購
+電鋼琴試彈與到府安裝
+電子鼓試打選購
+吉他換弦與調整
+琴頸調整、弦距調整
+拾音器與電路維修
+學校社團、教會樂器採購
+活動音響 PA 承接<button onclick="navigator.clipboard.writeText(document.getElementById('svc').firstChild.textContent);this.textContent='已複製'">複製</button></div>
+</div>
+
+<p class="mut">做完哪一項，在 Discord 回我編號就好（例如「1、3 做完」），我會記下來，一個月後重新查 AI 有沒有推薦我們。</p>
+</main></body></html>
