@@ -17,17 +17,15 @@ p{color:var(--sub);margin:0 0 12px;line-height:1.6}
 .cap span{color:var(--sub)}.cap a{color:var(--blue);text-decoration:none}
 </style></head><body>
 <header><h1>YAMAHA P-525 主推圖（樣本）</h1>
-<p>點圖看原尺寸（1000×1000）。電商兩種風格擇一用；官網用官網那套，跟電商不同。</p></header>
+<p>點圖看原尺寸（1000×1000）。每套都含品牌介紹、樂器詳細介紹、整套內容、尺寸、規格、購買／退貨／偏遠地區須知。電商兩種風格擇一用；官網用官網那套，跟電商不同。</p></header>
 <div id="app"></div>
 <script>
 const S=[
  ["sky","電商・輕快風（天空／白雲／風）","第 1 張放首圖（附耳機＋保養液），黑白各一"],
  ["apple","電商・蘋果風","同內容，乾淨灰白底"],
  ["web","官網・輕巧風","米白紙感＋紙飛機，跟電商明顯不同"]];
-const F={sky:["P525_1_main_BK.jpg","P525_1_main_WH.jpg","P525_2_cover.jpg","P525_3_stand.jpg","P525_4_features.jpg"],
- apple:["P525_1_main_BK.jpg","P525_1_main_WH.jpg","P525_2_cover.jpg","P525_3_stand.jpg","P525_4_features.jpg"],
- web:["P525_web_1_cover.jpg"]};
-const N={"P525_1_main_BK.jpg":"首圖・黑","P525_1_main_WH.jpg":"首圖・白","P525_2_cover.jpg":"封面","P525_3_stand.jpg":"分離式琴架","P525_4_features.jpg":"四大強項","P525_web_1_cover.jpg":"官網底圖"};
-const v="?v=1";
+const F={"sky": ["P525_1_main_BK.jpg", "P525_1_main_WH.jpg", "P525_2_cover.jpg", "P525_3_stand.jpg", "P525_4_features.jpg", "P525_d01_brand.jpg", "P525_d02_keys.jpg", "P525_d03_sound.jpg", "P525_d04_speakers.jpg", "P525_d05_headphones.jpg", "P525_d06_app.jpg", "P525_d07_record.jpg", "P525_d08_practice.jpg", "P525_d09_stand_pedals.jpg", "P525_d10_contents.jpg", "P525_d11_size.jpg", "P525_d12_spec.jpg", "P525_d90_notice_buy.jpg", "P525_d91_notice_return.jpg", "P525_d92_notice_remote.jpg"], "apple": ["P525_1_main_BK.jpg", "P525_1_main_WH.jpg", "P525_2_cover.jpg", "P525_3_stand.jpg", "P525_4_features.jpg", "P525_d01_brand.jpg", "P525_d02_keys.jpg", "P525_d03_sound.jpg", "P525_d04_speakers.jpg", "P525_d05_headphones.jpg", "P525_d06_app.jpg", "P525_d07_record.jpg", "P525_d08_practice.jpg", "P525_d09_stand_pedals.jpg", "P525_d10_contents.jpg", "P525_d11_size.jpg", "P525_d12_spec.jpg", "P525_d90_notice_buy.jpg", "P525_d91_notice_return.jpg", "P525_d92_notice_remote.jpg"], "web": ["P525_web_1_cover.jpg", "P525_d01_brand.jpg", "P525_d02_keys.jpg", "P525_d03_sound.jpg", "P525_d04_speakers.jpg", "P525_d05_headphones.jpg", "P525_d06_app.jpg", "P525_d07_record.jpg", "P525_d08_practice.jpg", "P525_d09_stand_pedals.jpg", "P525_d10_contents.jpg", "P525_d11_size.jpg", "P525_d12_spec.jpg", "P525_d90_notice_buy.jpg", "P525_d91_notice_return.jpg", "P525_d92_notice_remote.jpg"]};
+const N={"P525_1_main_BK.jpg": "首圖・黑", "P525_1_main_WH.jpg": "首圖・白", "P525_2_cover.jpg": "封面", "P525_3_stand.jpg": "分離式琴架", "P525_4_features.jpg": "四大強項", "P525_web_1_cover.jpg": "官網底圖", "P525_d01_brand.jpg": "品牌介紹", "P525_d02_keys.jpg": "木質琴鍵", "P525_d03_sound.jpg": "雙名琴音色", "P525_d04_speakers.jpg": "雙向喇叭", "P525_d05_headphones.jpg": "耳機", "P525_d06_app.jpg": "藍牙App", "P525_d07_record.jpg": "錄音", "P525_d08_practice.jpg": "練習功能", "P525_d09_stand_pedals.jpg": "琴架三踏板", "P525_d10_contents.jpg": "整套內容", "P525_d11_size.jpg": "尺寸", "P525_d12_spec.jpg": "規格", "P525_d90_notice_buy.jpg": "購買須知", "P525_d91_notice_return.jpg": "退貨須知", "P525_d92_notice_remote.jpg": "偏遠地區"};
+const v="?v=2";
 document.getElementById("app").innerHTML=S.map(([k,t,d])=>`<section><h2>${t}</h2><p>${d}</p><div class="grid">${F[k].map(f=>`<div class="card"><a href="${k}/${f}${v}" target="_blank"><img loading="lazy" src="${k}/${f}${v}" alt="${N[f]}"></a><div class="cap"><span>${N[f]}</span><a href="${k}/${f}" download>下載</a></div></div>`).join("")}</div></section>`).join("");
 </script></body></html>
